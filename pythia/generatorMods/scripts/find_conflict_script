@@ -1,0 +1,7 @@
+foreach lib ( *.a  )
+echo $lib
+foreach lib1 ( *.a )
+    ~lena/rels/fix/max $lib $lib1 
+endif
+end
+end

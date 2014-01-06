@@ -1,0 +1,29 @@
+* example of Interactive Geant session.
+* 
+* To run this kumac type " exec SimulationMods/test/intGeant.kumac " from
+* GEANT prompt.
+
+message Example of Interactive Geant session.
+
+* initialize memory
+gr/opt zfl
+
+* print all volumes mames
+print volu 0
+
+* show particular volume specification
+dspec cdf
+
+* plot cdf slice in z-y plane, x=0:
+null -600 600 -600 600
+dcut cdf 1 0 0 0 1 1
+
+message For more options see geant manual.
+message  
+message  to print pictures - 
+message        gr/opt zfl
+message        pi/pr filename.ps 
+message
+message  after "dspec" volume will be highlighted
+message  
+message Bye!  

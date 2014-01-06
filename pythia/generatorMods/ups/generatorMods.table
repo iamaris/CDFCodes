@@ -1,0 +1,11 @@
+File       = Table
+Product    = generatorMods
+Flavor     = ANY
+Qualifiers = ""
+
+    Action = setup
+proddir()
+setupenv()
+envset ( BOTTOM_LIBRARY , ${CDFSOFT2_DIR}/generatorMods/bgen )
+envset ( CDFPVLI        , ${CDFSOFT2_DIR}/generatorMods/examples/isajet/top175.val )
+

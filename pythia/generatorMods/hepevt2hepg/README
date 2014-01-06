@@ -1,0 +1,41 @@
+
+Jan 31, 2001 - Elena Gerchtein (CMU)
+
+hepevt2hepg executable is standalone convertor of
+/HEPEVT/ common blocks in 
+binary/ascii to cdf format, HEPG_StorableBank.
+
+1) to build hepevt2hepg executable:
+
+setup cdfsoft2 development
+addpkg -h generatorMods
+
+edit fill_hepevt_from_file.f
+two parameters are passed to this routine
+fn - file name (char*), 
+mode (integer) - a flag that might be useful for user. 
+/HEPEVT/ common block is already initialized,
+fill it from the file with the filename provided.
+
+gmake generatorMods.tbin
+
+2) Hepevt2HepgModule:
+ Command(s) available in the "Hepevt2HepgModule" module:
+      exit              Leave the current menu, module, or process
+      help              Bring up help text for the current context.
+      show              Display the value of any parameters or statistics.
+      parmSetName       general parameter of type string, set or list:
+         Name to give generated parameter set at exit. Usage: parmSetName set <name>
+      readParmSet       Read and fill the value of the params of this module.
+      echo              Send text argument to stdout (useful in scripts).
+      action            Command used to control module actions
+      verbose           general parameter of type bool, set or list:
+         Turn on verbose screen output. Usage: verbose set t/f
+      production        general parameter of type bool, set or list:
+         Suppress all screen output. Usage: production set t/f
+      inputFile         general parameter of type string, set or list:
+Input binary/ascii file
+      inputMode         general parameter of type int, set or list:
+Input mode
+
+    

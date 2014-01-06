@@ -1,0 +1,44 @@
+Sep. 07 2001 Elena Gerchtein
+
+valid for 4.0.0int1
+
+How to save/restore random state for generator.
+
+1) You can set up random seed for particular generator through
+   talk-to.
+
+2) At the end of the job or abort job random state is dumped:
+   - underlying fortran dumps random states of predefined random
+     streams into file defined by RNSTAT variable. Predefined 
+     streams are 
+   
+       RN_QFL1
+       RN_QFL2
+       RN_QFL3
+       RN_ISAJ
+       RN_CLEO
+       RN_HERW
+       RN_PYTH
+       RN_WGRD
+       RN_USED
+
+     this is based on TRn's fortran interface.  
+
+   - CLHEP based random engines if registed in CdfRn::Instance()
+     are dumped into CdfRnStat.dat file
+
+  All TRn streams different from predefined will be moved to CdfRn.   
+
+  Don't forget to define RNSTAT.   
+
+3) To restore random state from $RNSTAT and CdfRnStat.dat
+   for generators 
+
+   talk GenInputManager
+     RestoreRandomStream set true
+   exit
+
+   Don't forget to define RNSTAT.
+
+   
+4) Old code residuals will be removed. 

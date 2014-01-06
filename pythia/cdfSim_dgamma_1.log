@@ -1,0 +1,2662 @@
+....... loading libdiskcache_i.so v2_08_03 .......
+
+         Release version = development
+
+         =======================================================
+
+         Error Log established
+         31-Aug-2011 16:29:57 CDT
+
+         =======================================================
+         
+ CHKLOG: BFIELDM logical translation: /cdf/code/cdfsoft/dist/packages/GeometryBase/development/src/bfieldmap.dbt                                                                                                                                                                                                                                                                                                                                                                                                                
+ Bfield::print: nominal magnetic field is:     14.116;  field is  NON-UNIFORM 
+%ERLOG-e Loading default alignment:  CT_Configuration 31-Aug-2011 16:29:57 CDT 
+         run = 0 event = 0
+%ERLOG-e No ElectroStatics correction:  CT_Configuration 
+         31-Aug-2011 16:29:57 CDT run = 0 event = 0
+
+
+          HERWIG 6.510  31st Oct. 2005
+
+          Please reference:  G. Marchesini, B.R. Webber,
+          G.Abbiendi, I.G.Knowles, M.H.Seymour & L.Stanco
+          Computer Physics Communications 67 (1992) 465
+                             and
+          G.Corcella, I.G.Knowles, G.Marchesini, S.Moretti,
+          K.Odagiri, P.Richardson, M.H.Seymour & B.R.Webber,
+          JHEP 0101 (2001) 010
+
+          HERWIG: ALL PARTICLE TYPE WITH A B QUARK SET STABLE, USE QQ
+
+          HERWIG: ALL PARTICLE TYPE WITH A C QUARK SET STABLE, USE QQ
+
+HeavyQuarkGen Version: $Id: HeavyQuarkGenModule.cc,v 1.2 2003/04/15 18:26:09 paulini Exp $
+
+HeavyQuarkGenModule: Constructor
+
+
+Bgenerator Version: $Id: BgeneratorModule.cc,v 1.13 2007/07/03 00:37:28 paus Exp $
+
+ BGEN_INI: Bgenerator Initialization
+ CHKLOG: CDFDAB_DIR logical translation: /cdf/code/cdfsoft/products/cdfdab/v1_1/NULL                                                                                                                                                                                                                                                                                                                                                                                                                                            
+ BGEN_OPEN_SPECTRA: finished successfully.
+
+ BGEN_INI:  Hadrons/properties known to Bgenerator 
+           Number     Name       Mass   Lifetime 
+          ----------------------[GeV]----[ps]---
+            1        Bu+       5.2792   1.6380
+            2        Bd0       5.2795   1.5300
+            3        Bs0       5.3663   1.4700
+            4        Bc+       6.2760   0.4600
+            5        ALamB0    5.6200   1.3830
+            6        User      0.0000   0.0000
+ CHKLOG: HEPTBL logical translation: /cdf/code/cdfsoft/dist/packages/ParticleDB/development/hepevt/heptabl.dbt                                                                                                                                                                                                                                                                                                                                                                                                                  
+ ---> The maximal weight value is: 0.100000E-05
+ Warning! You have to reinitialize this value with the maximal weight from your VECBOS MC generation !
+ ---> Default weight bank name is VECB. (eg. PAPA,VECB)
+ ---> MC generrtor init number is: 87926891
+
+
+          HERWIG 6.510  31st Oct. 2005
+
+          Please reference:  G. Marchesini, B.R. Webber,
+          G.Abbiendi, I.G.Knowles, M.H.Seymour & L.Stanco
+          Computer Physics Communications 67 (1992) 465
+                             and
+          G.Corcella, I.G.Knowles, G.Marchesini, S.Moretti,
+          K.Odagiri, P.Richardson, M.H.Seymour & B.R.Webber,
+          JHEP 0101 (2001) 010
+
+#### MODULE #### PythiaInfoModule created - PythiaInfoModule ####
+
+#### MODULE #### HepgFilter created - HepgFilter ####
+********* PartFilter INITIALIZED **********
+
+#### MODULE #### GenTrigModule created - GenTrigModule ####
+#### GenTrigXFT created -- XFT ####
+#### GenTrigXTRP created -- XTRP ####
+#### GenTrigSVT created -- SVT ####
+#### GenTrigCMU created -- CMU ####
+#### GenTrigCMX created -- CMX ####
+#### GenTrigL1Pair created -- L1Pr ####
+#### GenTrigL1Pair created -- L1L2Pr ####
+#### GenTrigL2Pair created -- L2Bs ####
+#### GenTrigL2Pair created -- L2Bd ####
+#### GenTrigL1Trip created -- L1Tr ####
+#### GenTrigL1Trip created -- L1L2Tr ####
+#### GenTrigL2Trip created -- L2Tr ####
+#### GenTrigL1DiMu created -- L1DM ####
+#### GenTrigL1DMuX created -- L1DMX ####
+#### GenTrigL2DiMu created -- L2DM ####
+#### GenTrigL1MuSvt created -- L1MS ####
+#### GenTrigL2MuSvt created -- L2MS ####
+#### GenTrigFiducial created - Fidu ####
+
+#### MODULE #### QuickCdfObjects created - QuickCdfObjects ####
+#### GenTrigCOT created -- CotHepg ####
+#### GenTrigCMU created -- CmuHepg ####
+
+#### MODULE #### MCInfoModule created - MCInfoModule ####
+
+ MZSTOR.  ZEBRA table base TAB(0) in /MZCC/ at adr   193213871     B8435AF HEX
+
+ MZSTOR.  Initialize Store  0  in /GCBANK/
+          with Store/Table at absolute adrs   121268677   193213871
+                                        HEX     73A69C5     B8435AF
+                                        HEX    FBB6325A           0
+                              relative adrs   -71945638           0
+          with     1 Str. in     2 Links in   5300 Low words in 9999970 words.
+          This store has a fence of   16 words.
+
+ MZLOGL.  Set Log Level 0 for store  0
+ --------------- HepPDT Version 1.00.01 --------------- 
+1*****  GEANT Version  3.21/14 Released on 19032002
+0*****  Correction Cradle Version  0.1400
+
+ MZDIV.   Initialize Division  Constant  in Store  0
+          NW/NWMAX=   20008000000,  MODE/KIND=  1  2
+          Division 20 initialized.
+
+ MZLINK.  Initialize Link Area  /GCLINK/  for Store  0 NL/NS=    20    20
+
+ MZLINK.  Initialize Link Area  /GCSLNK/  for Store  0 NL/NS=   100   100
+
+#### MODULE #### SimpleCotTrkReco created - SimpleCotTrkReco ####
+
+#### MODULE #### SimpleSiTrkReco created - SimpleSiTrkReco ####
+<<<getenv>>> : Name= NEVENTS  Default= 10  x=  1000
+<<<getenv>>> : Name= RUN_NUMBER  Default= 151435  x=  151435
+<<<getenv>>> : Name= BEGIN_EVENT_NUMBER  Default= 1  x=  1
+<<<getenv>>> : Name= RUN_SECTION  Default= 1  x=  1
+<<<getenv>>> : Name= DFC_BOOK  Default= none  x=  none
+<<<getenv>>> : Name= GENERATOR_TCL  Default= ./mc_Pythia_msub230_slha.tcl  x=  ./mc_Pythia_msub230_slha.tcl
+<<<getenv>>> : Name= OUTPUT_FILE  Default= cdfSim_dgamma.root  x=  cdfSim_dgamma_1.root
+<<<getenv>>> : Name= RANDOM_SEED_INPUT  Default= ./SimulationMods/test/setup_random_seed.dat  x=  ./SimulationMods/random_seed/setup_random_seed_1.dat
+<<<getenv>>> : Name= RANDOM_SEED_OUTPUT  Default= CdfRnStat.dat  x=  CdfRnStat.dat
+<<<getenv>>> : Name= STORE_USERINFO  Default= 0  x=  0
+<<<getenv>>> : Name= BEAM_SET_BY_HAND  Default= 0  x=  0
+<<<getenv>>> : Name= CALIB_USE_FRONTIER  Default= 0  x=  0
+<<<getenv>>> : Name= CALIB_PROC_NAME  Default= PROD_PHYSICS_CDF  x=  PROD_PHYSICS_CDF
+<<<getenv>>> : Name= CALIB_PASS_NAME  Default= 17  x=  17
+<<<getenv>>> : Name= CALIB_PARM_SET_NAME  Default= PASS17PROD  x=  PASS17PROD
+Current value of item(s) in the "CalibrationManager" module:
+
+      Value of parmSetName for this module  is PASS17PROD
+      Value of verbose for this module  is false
+      Value of production for this module  is false
+      Value of IomapFile for this module  is NONE
+      Value of ProcessName for this module  is PROD_PHYSICS_CDF
+      Value of Version for this module  is 9999999
+      Value of Database for this module  is ofotl_prd_read
+      Value of DataDB for this module  is ofotl_prd_read
+      Value of LoadAll for this module  is false
+      Value of Jobset for this module  is -1
+      Value of ConnectionTimeout for this module  is -1
+      Value of PassName for this module  is 17
+      Value of Dest for this module  is PROD
+      Value of Mode for this module  is PHYSICS
+      Value of System for this module  is CDF
+      Value of PrintDBStats for this module  is false
+      Value of NotifySeverityLevel for this module  is NONE
+      Value of Debug for this module  is false
+      Value of UseKeyDB for this module  is true
+      Value of ExpertRemoveEntry for this module  is 
+<<<getenv>>> : Name= COT_MATCHING  Default= 0  x=  0
+<<<getenv>>> : Name= SI_MATCHING  Default= 0  x=  0
+<<<getenv>>> : Name= BEAM_SIGMA_Z  Default= 28.0  x=  28.0
+<<<getenv>>> : Name= BEAM_SIGMA_T0  Default= 1.3  x=  1.3
+Current value of item(s) in the "GenPrimVert" module:
+
+      Value of parmSetName for this module  is IGNORE
+      Value of verbose for this module  is false
+      Value of production for this module  is false
+      Value of sigma_x for this module  is 0.00257
+      Value of sigma_y for this module  is 0.00258
+      Value of sigma_z for this module  is 28
+      Value of sigma_t for this module  is 1.3
+      Value of n_bunches for this module  is 0
+      Value of bunch_spacing for this module  is 400
+      Value of pv_central_x for this module  is 0
+      Value of pv_central_y for this module  is 0
+      Value of pv_central_z for this module  is 0
+      Value of pv_slope_dxdz for this module  is 0
+      Value of pv_slope_dydz for this module  is 0
+      Value of BeamlineFromDB for this module  is true
+      Value of UseBetaStarBeamWidth for this module  is true
+      Value of UseBetaStarZVertex for this module  is true
+      Current value of items on the "RandomNumberMenu" menu:
+            Value of RandomSeed1 for this module  is 922883591
+            Value of RandomSeed2 for this module  is 109735476
+      Current value of items on the "BeamBetaStarMenu" menu:
+            Value of beamEmittanceX for this module  is 1.26e-07
+            Value of beamEmittanceY for this module  is 1.24e-07
+            Value of beamBetaStarX for this module  is 38.6
+            Value of beamBetaStarY for this module  is 38
+            Value of beamZ0X for this module  is 14.2
+            Value of beamZ0Y for this module  is -9.2
+Current value of item(s) in the "GeometryManager" module:
+
+      Value of parmSetName for this module  is IGNORE
+      Value of verbose for this module  is false
+      Value of production for this module  is false
+      Current value of items on the "DetectorMenu" menu:
+            Value of enableSimpleSi for this module  is false
+            Value of enableB4 for this module  is false
+            Value of enableBeamBox for this module  is false
+            Value of enableSimpleSvx for this module  is false
+            Value of enableSvx for this module  is true
+            Value of enableSimpleCot for this module  is false
+            Value of enableAlPlate for this module  is false
+            Value of enableCot for this module  is true
+            Value of enableMuon for this module  is true
+            Value of enableCalor for this module  is true
+            Value of enableMiniplug for this module  is false
+            Value of enableDetailedMiniplug for this module  is false
+            Value of enableClc for this module  is false
+            Value of enableTof for this module  is true
+            Value of enableStripChamber for this module  is true
+            Value of enablePassive for this module  is true
+            Value of enableBeampipeC for this module  is true
+            Value of enableBeampipe for this module  is false
+            Value of enableCPR for this module  is true
+            Value of enableAll for this module  is false
+      Current value of items on the "SiliconGeometryMenu" menu:
+            Value of AlignmentSource for this module  is ofotl_prd_read     150050 1 GOOD
+            Value of AlignmentPrint for this module  is 3
+            Value of AlignmentAlignWafers for this module  is true
+            Value of L00Alignment for this module  is true
+            Value of BuildPassive for this module  is true
+            Value of BuildPassivePHA for this module  is true
+            DisabledPassiveElements in module GeometryManager has 2 values
+	(minimum 0, maximum 0): 
+	svxInnScreen
+	svxBHTap
+            Value of CreateOldPhantomLayer for this module  is false
+            Value of OldPhantomLayerThickness for this module  is 0.2
+            Value of OldPhantomLayerHalfLength for this module  is 165
+            Value of OldPhantomLayerMaterial for this module  is SILICON
+            Value of CreatePhantomLayer for this module  is true
+            PhantomLayerRmin in module GeometryManager has 10 values
+	(minimum 0, maximum 99): 
+	14.8
+	14.8
+	14.8
+	14.8
+	14.8
+	20.5
+	20.5
+	20.8
+	20.5
+	20.5
+            PhantomLayerZmin in module GeometryManager has 10 values
+	(minimum 0, maximum 99): 
+	-60
+	-45
+	-15
+	15.1
+	45.1
+	-100
+	-45
+	-15
+	15.1
+	45.1
+            PhantomLayerZmax in module GeometryManager has 10 values
+	(minimum 0, maximum 99): 
+	-45.1
+	-15.1
+	15
+	45
+	60
+	-45.1
+	-15.1
+	15
+	45
+	100
+            PhantomLayerThickness in module GeometryManager has 10 values
+	(minimum 0, maximum 99): 
+	0.9
+	0.9
+	0.2
+	0.9
+	0.9
+	0.4
+	0.15
+	0.1
+	0.15
+	0.4
+            PhantomLayerMaterial in module GeometryManager has 10 values
+	(minimum 0, maximum 99): 
+	SVX_BIAS_CABLE
+	SVX_BIAS_CABLE
+	SVX_BIAS_CABLE
+	SVX_BIAS_CABLE
+	SVX_BIAS_CABLE
+	SVX_BIAS_CABLE
+	SVX_BIAS_CABLE
+	SVX_BIAS_CABLE
+	SVX_BIAS_CABLE
+	SVX_BIAS_CABLE
+            PhantomLayerContainer in module GeometryManager has 10 values
+	(minimum 0, maximum 99): 
+	SVCC
+	SVCC
+	SVCC
+	SVCC
+	SVCC
+	ISLC
+	ISLC
+	ISLC
+	ISLC
+	ISLC
+            Value of ReadSiliMapROOT for this module  is false
+            Value of ReadSiliMapROOTFileName for this module  is 
+            Value of WriteSiliMapROOT for this module  is false
+            Value of WriteSiliMapROOTFileName for this module  is UNKNOWN
+            Value of ReadSiliMapDB for this module  is false
+            Value of SiliMapDBVersion for this module  is 0
+            Value of WriteSiliMapDB for this module  is false
+            Value of ReadSiliMapASCII for this module  is false
+            Value of ReadSiliMapASCIIFileName for this module  is UNKNOWN
+            Value of WriteSiliMapASCII for this module  is false
+            Value of WriteSiliMapASCIIFileName for this module  is UNKNOWN
+            Value of UseCustomSiliMapDB for this module  is false
+            Value of CustomSiliMapDBID for this module  is onotl_dev
+            Value of SiliMapDEDxScale for this module  is 1
+            Value of SiliMapI0Scale for this module  is 1
+            Value of SiliMapX0Scale for this module  is 1
+      Current value of items on the "Cot" menu:
+            Value of run1CTCGeometry for this module  is false
+            Value of run1CTCData for this module  is true
+      Current value of items on the "MuonGeometryMenu" menu:
+            Value of CMPGeometry for this module  is true
+            Value of CMUGeometry for this module  is true
+            Value of CMXGeometry for this module  is true
+            Value of IMUGeometry for this module  is true
+      Current value of items on the "CalorGeometryMenu" menu:
+            Value of BuildPhantom for this module  is false
+            Value of PhantomThickness for this module  is 0.1
+      Current value of items on the "TofGeometryMenu" menu:
+            Value of GeometryModel for this module  is Aligned
+            Value of Verbosity for this module  is None
+      Current value of items on the "PrintMenu" menu:
+            Value of printSvx for this module  is false
+            Value of printCot for this module  is false
+            Value of printMuon for this module  is false
+            Value of printCalor for this module  is false
+            Value of printTof for this module  is false
+            Value of printStripChamber for this module  is false
+            Value of printPassive for this module  is false
+            Value of printBeampipeC for this module  is false
+            Value of printCPR for this module  is false
+            Value of printAll for this module  is false
+            Value of printTree for this module  is false
+      Value of uniformField for this module  is false
+      Value of Bfield for this module  is 14.116
+      Value of useCalibDB for this module  is true
+Current value of items on the "DetectorMenu" menu:
+            Value of declareSvx for this module  is true
+            Value of declareCot for this module  is true
+            Value of declareMuon for this module  is true
+            Value of declareCalor for this module  is true
+            Value of declareTof for this module  is true
+            Value of declareStripChamber for this module  is true
+            Value of declarePassive for this module  is true
+            Value of declareBeampipeC for this module  is true
+            Value of declareCPR for this module  is false
+            Value of declareAll for this module  is true
+Current value of item(s) in the "SimInitManager" module:
+
+      Value of parmSetName for this module  is IGNORE
+      Value of verbose for this module  is false
+      Value of production for this module  is false
+      Current value of items on the "DetectorMenu" menu:
+            Value of declareSvx for this module  is true
+            Value of declareCot for this module  is true
+            Value of declareMuon for this module  is true
+            Value of declareCalor for this module  is true
+            Value of declareTof for this module  is true
+            Value of declareStripChamber for this module  is true
+            Value of declarePassive for this module  is true
+            Value of declareBeampipeC for this module  is true
+            Value of declareCPR for this module  is false
+            Value of declareAll for this module  is true
+      Current value of items on the "DebugMenu" menu:
+            Value of showMaterials for this module  is false
+            Value of showMedia for this module  is false
+            Value of showLogicalVolumes for this module  is false
+            Value of showPhysicalVolumes for this module  is false
+            Value of resetCopyNumber for this module  is false
+      Value of applyAlignment for this module  is true
+<<<getenv>>> : Name= CDFSIM_FAST_TRACK  Default= false  x=  false
+<<<getenv>>> : Name= SHOW_ACTIVE_VOLUMES  Default= false  x=  false
+<<<getenv>>> : Name= CDFSIM_DEBUG_LEVEL  Default= 0  x=  0
+Current value of items on the "DetectorMenu" menu:
+            Value of simulateSvx for this module  is true
+            Value of simulateCot for this module  is true
+            Value of simulateMuon for this module  is true
+            Value of simulateCalor for this module  is true
+            Value of simulateTof for this module  is true
+            Value of simulateStripChamber for this module  is false
+            Value of simulatePassive for this module  is true
+            Value of simulateBeampipeC for this module  is false
+This factory knows about 20 digitizer types. These types are:
+CalorDigiBFCoil
+CalorDigiCcal
+CalorDigiGeneric
+CalorDigiNoBFCoil
+CalorDigiPcal
+CalorDigiWcal
+ClcDigitizer
+CotDigitizer
+ImuDigiBMUGas
+ImuDigiBSUPaddle
+ImuDigiTSUPaddle
+MuonDigiCMP
+MuonDigiCMU
+MuonDigiCMX
+MuonDigiCSX
+SimpleCotDigitizer
+SimpleSiDigitizer
+SvxDigitizer
+TofDigi3Pack
+TofDigiBar
+Current value of item(s) in the "SimulationControlMod" module:
+
+      			The following detector elements have been configured with digitizers:
+				BFCoil with digitizer CalorDigiBFCoil in group CalorGroup
+				BMUGas with digitizer ImuDigiBMUGas in group ImuGroup
+				BSUPaddle with digitizer ImuDigiBSUPaddle in group ImuGroup
+				CMPPart with digitizer MuonDigiCMP in group MuonCMPdata
+				CMUExtrusion with digitizer MuonDigiCMU in group MuonCMUdata
+				CMXChamber with digitizer MuonDigiCMX in group MuonCMXdata
+				CSXCounter with digitizer MuonDigiCSX in group MuonCSXdata
+				CalorDetectorElement with digitizer CalorDigiGeneric in group CalorGroup
+				CdfHalfLadder with digitizer SvxDigitizer in group SvxGroup
+				CotSuperLayer with digitizer CotDigitizer in group CotGroup
+				NoBFCoil with digitizer CalorDigiNoBFCoil in group CalorGroup
+				TSUPaddle with digitizer ImuDigiTSUPaddle in group ImuGroup
+				Tof3Pack with digitizer TofDigi3Pack in group TofGroup
+				TofBar with digitizer TofDigiBar in group TofGroup
+<<<getenv>>> : Name= COT_DRIFT_MODEL  Default= Garfield  x=  Garfield
+<<<getenv>>> : Name= COT_HIT_RESOLUTION_SCALE  Default= 0.64  x=  0.64
+Current value of items on the "CotGroup_CotSuperLayer" menu:
+            Value of CreateCOTD for this module  is true
+            Value of CreateCOTQ for this module  is false
+            Value of CreateCOTM for this module  is true
+            Value of CreateMCOT for this module  is false
+            Value of CreateCotTrueXP for this module  is false
+            Value of CreatePropagatedParticleColl for this module  is false
+            Value of StepSize for this module  is 1
+            Value of TimingGate for this module  is 400
+            Value of TwoHitSeparation for this module  is 10
+            Value of DriftModel for this module  is Garfield
+            Value of LoadExistingRawData for this module  is false
+            Value of HitResolutionScale for this module  is 0.64
+            HitEfficiency in module SimulationControlMod has 8 values
+	(minimum 8, maximum 8): 
+	1
+	1
+	1
+	1
+	1
+	1
+	1
+	1
+            WidthScale in module SimulationControlMod has 8 values
+	(minimum 8, maximum 8): 
+	0.847
+	1.014
+	0.868
+	1.022
+	1.048
+	1.039
+	1.044
+	1.042
+            WidthSigmaScale in module SimulationControlMod has 8 values
+	(minimum 8, maximum 8): 
+	0.813
+	0.863
+	0.782
+	0.821
+	0.841
+	0.812
+	0.815
+	0.798
+Current value of items on the "SvxGroup_CdfHalfLadder" menu:
+            Value of CreateSIXD for this module  is true
+            Value of CreatePropagatedSi for this module  is false
+            Value of pick_svx_cdm for this module  is PARAMETERIZED
+            Value of svx_cdm_delta_rays for this module  is ON
+            Value of svx_cdm_magnetic_field for this module  is ON
+            Value of svx_cdm_noise for this module  is THRESH7
+            svx_cdm_noise_list in module SimulationControlMod has 2 values
+	(minimum 2, maximum 18): 
+	0
+	0
+            svx_cdm_crosstalk_list in module SimulationControlMod has 18 values
+	(minimum 2, maximum 18): 
+	2
+	0
+	0
+	0
+	0.43
+	0.2
+	0.47
+	0.19
+	0.49
+	0.51
+	0.41
+	0.24
+	0.46
+	0.5
+	0.355
+	0.355
+	0.355
+	0.355
+            svx_cdm_fractionlost_list in module SimulationControlMod has 2 values
+	(minimum 2, maximum 18): 
+	0
+	0
+            svx_cdm_fractionlostfstrip_list in module SimulationControlMod has 2 values
+	(minimum 2, maximum 18): 
+	0
+	0
+            svx_cdm_relgain_list in module SimulationControlMod has 2 values
+	(minimum 2, maximum 18): 
+	0
+	0
+            Value of svx_validation for this module  is OFF
+            Value of ToyPulseHeight for this module  is 30
+            Value of GeoElossToADC for this module  is 300000
+            Value of ZigZagL7 for this module  is true
+            Value of debug for this module  is 0
+            Value of debugNtuple for this module  is 
+            Value of useNoiseDB for this module  is true
+            Value of noiseDBRun for this module  is -1
+            Value of noiseDBVersion for this module  is -1
+            Value of noiseDBStatus for this module  is 
+            Value of noiseDBName for this module  is 
+            Value of LoadExistingRawData for this module  is false
+            Value of AlignmentAlignWafers for this module  is true
+Current value of items on the "MuonCMPdata_CMPPart" menu:
+            Value of writeHitCollection for this module  is false
+            Value of debugLevel for this module  is 0
+            Value of disableBluebeam for this module  is true
+            Value of disableKeystone for this module  is false
+            Value of disableKeystoneWedge5 for this module  is false
+            Value of disableKeystoneWedge6 for this module  is false
+            Value of disableMiniskirts for this module  is false
+            Value of disableRunDependence for this module  is false
+            Value of realisticSmearing for this module  is false
+<<<getenv>>> : Name= CDFSIM_INPUT  Default= MC_GENERATOR  x=  MC_GENERATOR
+<<<getenv>>> : Name= INPUT_FILE  Default= undefined  x=  undefined
+<<<getenv>>> : Name= RUNMC_TCL_DIR  Default= .  x=  .
+Current value of item(s) in the "RandomGenManager" module:
+
+      Value of parmSetName for this module  is IGNORE
+      Value of verbose for this module  is false
+      Value of production for this module  is false
+      Value of RestoreRandomStreams for this module  is true
+      Value of SaveRandomStreams for this module  is true
+      Value of OutputFileName for this module  is CdfRnStat.dat
+      Value of InputFileName for this module  is ./SimulationMods/random_seed/setup_random_seed_1.dat
+      Current value of items on the "RandomNumberMenu" menu:
+            Value of RandomSeedGRNDM1 for this module  is 3591
+            Value of RandomSeedGRNDM2 for this module  is 2309736
+            Value of RandomSeedPYTHIA1 for this module  is 93453591
+            Value of RandomSeedPYTHIA2 for this module  is 73436
+            Value of RandomSeedHERWIG1 for this module  is 355391
+            Value of RandomSeedHERWIG2 for this module  is 97336
+setup_input.tcl:setup_mc_generator_input 
+<<<getenv>>> : Name= REPORT_FREQUENCY  Default= 1  x=  1
+[setup_input.tcl:setup_mc_generator_input] FIRST_EVENT_OFFSET= 0 
+[setup_input.tcl:setup_mc_generator_input] RUN_NUMBER = 151435 
+[setup_input.tcl:setup_mc_generator_input] RUN_SECTION = 1 
+Current value of item(s) in the "GenInputManager" module:
+
+      Value of parmSetName for this module  is IGNORE
+      Value of verbose for this module  is false
+      Value of production for this module  is false
+      Value of events for this module  is 2147483646
+      Value of maxReadErrors for this module  is 2
+      Value of report for this module  is 1
+      Value of statusFile for this module  is 0
+      Value of firstEvent for this module  is -1
+      dropList in module GenInputManager has 0 values
+	(minimum 0, maximum 1000): 
+      classHideList in module GenInputManager has 0 values
+	(minimum 0, maximum 1000): 
+      hideList in module GenInputManager has 0 values
+	(minimum 0, maximum 1000): 
+      processDropList in module GenInputManager has 0 values
+	(minimum 0, maximum 1000): 
+      keepFromProcessList in module GenInputManager has 0 values
+	(minimum 0, maximum 1000): 
+      selectEvents: *(*):*(*) 
+      selectRS: *(*):*(*) 
+      runsTrigs: *(*):*(*) 
+      runsRS: *(*):*(*) 
+      Value of recordType for this module  is SIMPLE
+      Value of run_number for this module  is 151435
+      Value of run_type for this module  is MC
+      Value of section_number for this module  is 1
+      Value of first_event for this module  is 0
+      Value of genBeginRun for this module  is true
+      Value of specifyRuns for this module  is false
+            Value of RunSectionLength for this module  is 1000000
+      Value of RunSectionOffset for this module  is 0
+      Value of LumiWtRunsFromDB for this module  is false
+      Value of RewriteLRIH for this module  is false
+      Value of runNumberFile for this module  is 
+      Value of runNumberAndLumiFile for this module  is 
+      Value of useRunSections for this module  is false
+      Value of Nevent for this module  is 0
+<<<getenv>>> : Name= RUNMC_FLAG  Default= GENERATE_AND_SIMULATE  x=  GENERATE_AND_SIMULATE
+<<<getenv>>> : Name= HEP_HIST_FILE  Default= None  x=  None
+<<<getenv>>> : Name= EVTGEN_USER_DECAY_FILE  Default= 0  x=  0
+Current value of item(s) in the "EvtGen" module:
+
+      Value of parmSetName for this module  is IGNORE
+      Value of verbose for this module  is false
+      Value of production for this module  is false
+      Value of mode for this module  is 0
+      Value of UseRootParticle for this module  is false
+      Value of RootParticlePx for this module  is 0
+      Value of RootParticlePy for this module  is 0
+      Value of RootParticlePz for this module  is 0
+      Value of RootParticleHepID for this module  is 0
+      Value of UseUserDecayFile for this module  is false
+      Value of UserDecayFile for this module  is dummy
+      Value of AdjustCPAsymm for this module  is false
+      Value of DecayPromptCharm for this module  is true
+      Value of DecayBMeson for this module  is true
+      Value of DecayBBaryon for this module  is true
+      Value of RandomSeed1 for this module  is 0
+      Value of RandomSeed2 for this module  is 0
+
+Non-zero elements of MSUB: 
+
+MSUB(230) =     1  
+
+
+Non-zero parameter settings of IMSS: 
+
+IMSS(  1) =    11  IMSS(  4) =     1  IMSS(  8) =     1  IMSS( 11) =     1  
+IMSS( 21) =    37  IMSS( 22) =    37  
+
+
+Non-zero parameter settings of RMSS: 
+
+RMSS(  1) =       80.0  RMSS(  2) =       160.  RMSS(  3) =       500.  RMSS(  4) =       800.  
+RMSS(  5) =       2.00  RMSS(  6) =       250.  RMSS(  7) =       200.  RMSS(  8) =       800.  
+RMSS(  9) =       700.  RMSS( 10) =       800.  RMSS( 11) =       700.  RMSS( 12) =       500.  
+RMSS( 13) =       250.  RMSS( 14) =       200.  RMSS( 15) =       800.  RMSS( 16) =       400.  
+RMSS( 18) =      0.100  RMSS( 19) =       850.  RMSS( 20) =     0.0410  RMSS( 21) =       1.00  
+RMSS( 22) =       800.  RMSS( 23) =   1.00e+04  RMSS( 24) =   1.00e+04  RMSS( 25) =   1.00e+04  
+RMSS( 29) =   2.40e+18  
+
+
+Non-zero elements of MSUB: 
+
+MSUB(230) =     1  
+
+
+         =======================================================
+
+         Error Log established
+         31-Aug-2011 16:30:27 CDT
+
+         =======================================================
+         
+DBEventLogger::OTLConnect(cdf_reader/xxxxx@cdfofread)
+DBEventLogger::OTLrelease(cdf_reader/xxxxx@cdfofread)
+ PcalDetectorElement::makeTop()
+ - TOF geometry system of type [ALIGNED] found. 
+ - Calibrator:  Data
+
+============ TofManager Initialized ============
+RandomGenManager: restoring random state from file ./SimulationMods/random_seed/setup_random_seed_1.dat:
+BGENERATOR -   464272709,1704213668
+EvtGen -   1803730167,324952955
+FAKE_EVENT -   1268899662,80728317
+GEN_PRIM_VERT -   1753561307,410839705
+GRNDM -   979872138,1316240569
+HEAVYQUARKGEN -   9876,54321
+HERWIG -   1633230920,1248590720
+PYTHIA -   101000000,201000000
+QFL -   373682070,688483496
+QQModule -   9223591,109736
+SIMULATION -   2094855621,254752396
+SVX_SIM -   1289741558,1376336092
+TAUOLA -   883591,9735476
+WGRAD -   1330525444,315427960
+mbr -   1732954992,1708468546
+PythiaModule: Please note the following long lived strange particles have been
+              set stable and cannot be set to decay
+              K_0S, Lambda, Sigma, Xi and Omega.
+%ERLOG-e [PYTHIA_BMIXOF_R]: 
+         /home/aris/analysis/pythia/generatorMods/src/PythiaModule.cc : 106  
+         PythiaModule: B-Bbar mixing is disabled and should  
+         be done using EvtGen  Pythia 31-Aug-2011 16:30:28 CDT run = 0 event = 0
+SYJUN: Decay fileName fileMode  none
+Open Decay File: susyhit_slha.out
+File Open
+1                                                                              
+ ******************************************************************************
+ ******************************************************************************
+ **                                                                          **
+ **                                                                          **
+ **              *......*                  Welcome to the Lund Monte Carlo!  **
+ **         *:::!!:::::::::::*                                               **
+ **      *::::::!!::::::::::::::*          PPP  Y   Y TTTTT H   H III   A    **
+ **    *::::::::!!::::::::::::::::*        P  P  Y Y    T   H   H  I   A A   **
+ **   *:::::::::!!:::::::::::::::::*       PPP    Y     T   HHHHH  I  AAAAA  **
+ **   *:::::::::!!:::::::::::::::::*       P      Y     T   H   H  I  A   A  **
+ **    *::::::::!!::::::::::::::::*!       P      Y     T   H   H III A   A  **
+ **      *::::::!!::::::::::::::* !!                                         **
+ **      !! *:::!!:::::::::::*    !!       This is PYTHIA version 6.409      **
+ **      !!     !* -><- *         !!       Last date of change: 13 Nov 2006  **
+ **      !!     !!                !!                                         **
+ **      !!     !!                !!       Now is 31 Aug 2011 at 16:30:28    **
+ **      !!                       !!                                         **
+ **      !!        lh             !!       Disclaimer: this program comes    **
+ **      !!                       !!       without any guarantees. Beware    **
+ **      !!                 hh    !!       of errors and use common sense    **
+ **      !!    ll                 !!       when interpreting results.        **
+ **      !!                       !!                                         **
+ **      !!                                Copyright T. Sjostrand (2006)     **
+ **                                                                          **
+ ** An archive of program versions and documentation is found on the web:    **
+ ** http://www.thep.lu.se/~torbjorn/Pythia.html                              **
+ **                                                                          **
+ ** When you cite this program, the official reference is to the 6.4 manual: **
+ ** T. Sjostrand, S. Mrenna and P. Skands, JHEP05 (2006) 026                 **
+ ** (LU TP 06-13, FERMILAB-PUB-06-052-CD-T) [hep-ph/0603175].                **
+ **                                                                          **
+ ** Also remember that the program, to a large extent, represents original   **
+ ** physics research. Other publications of special relevance to your        **
+ ** studies may therefore deserve separate mention.                          **
+ **                                                                          **
+ ** Main author: Torbjorn Sjostrand; CERN/PH, CH-1211 Geneva, Switzerland,   **
+ **   and Department of Theoretical Physics, Lund University, Lund, Sweden;  **
+ **   phone: + 41 - 22 - 767 82 27; e-mail: torbjorn@thep.lu.se              **
+ ** Author: Stephen Mrenna; Computing Division, Simulations Group,           **
+ **   Fermi National Accelerator Laboratory, MS 234, Batavia, IL 60510, USA; **
+ **   phone: + 1 - 630 - 840 - 2556; e-mail: mrenna@fnal.gov                 **
+ ** Author: Peter Skands; Theoretical Physics Department,                    **
+ **   Fermi National Accelerator Laboratory, MS 106, Batavia, IL 60510, USA; **
+ **   phone: + 1 - 630 - 840 - 2270; e-mail: skands@fnal.gov                 **
+ **                                                                          **
+ **                                                                          **
+ ******************************************************************************
+ ******************************************************************************
+1****************** PYINIT: initialization of PYTHIA routines *****************
+  (PYSLHA:) Reading in SLHA spectrum from unit  37
+  (PYSLHA:) Ignoring BLOCK DCINFO  # Decay Program ... on line    41
+  (PYSLHA:) Ignoring line     52:          1     1.27934000E+02   # alpha_
+  (PYSLHA:) Ignoring line     53:          2     1.16639000E-05   # G_F [G
+  (PYSLHA:) Ignoring line     54:          3     1.17200000E-01   # alpha_
+  (PYSLHA:) Ignoring line     56:          5     4.25000000E+00   # mb(mb)
+  (PYSLHA:) Ignoring line     58:          7     1.77710000E+00   # mtau p
+  (PYSLHA:) Ignoring line     68:          0     4.65777483E+02   # EWSB  
+  (PYSLHA:) Ignoring line     77:          5     4.87877839E+00   # b-quar
+  (PYSLHA:) Ignoring line    161:          2     9.75041102E+00   # tanbet
+  (PYSLHA:) Ignoring line    162:          3     2.45014641E+02   # vev(Q)
+  (PYSLHA:) Ignoring line    163:          4     1.62371513E+05   # MA^2(Q
+  (PYSLHA:) PYTHIA will not use BLOCK GAUGE Q=  4.65777483E+02  # T... on line   166
+  (PYSLHA:) PYTHIA will not use BLOCK YU Q=  4.65777483E+02  # The ... on line   186
+  (PYSLHA:) PYTHIA will not use BLOCK YD Q=  4.65777483E+02  # The ... on line   191
+  (PYSLHA:) PYTHIA will not use BLOCK YE Q=  4.65777483E+02  # The ... on line   196
+
+  (PYSLHA:) No spectrum inconsistencies were found.
+
+ ***************** PYSLHA v1.07: SUSY SPECTRUM INTERFACE *****************
+ *   PYSLHA: Last Change 01 May 2006 - P.Z. Skands
+ *   Spectrum Calculator was: SUSPECT      version 2.41        
+ *   Read spectrum file on unit:  37
+ *
+ * Pole masses:
+ *        ~d       ~u       ~s       ~c    ~b(12)   ~t(12)
+ *  L   567.62   562.11   567.62   562.11   516.78   399.62
+ *  R   545.47   545.74   545.47   545.74   546.09   586.39
+ *
+ *        ~e     ~nu_e      ~mu    ~nu_mu  ~tau(12)  ~nu_tau
+ *  L   200.77   184.85   200.77   184.85   133.34   183.97
+ *  R   142.82     0.00   142.82     0.00   204.80     0.00
+ *
+ *        ~g    ~chi_10  ~chi_20  ~chi_30  ~chi_40  ~chi_1+  ~chi_2+
+ *      605.96    97.20   180.30   358.44   377.78   179.67   377.98
+ *
+ *     h0       H0       A0       H+                                         
+ *      109.93   394.94   394.53   402.95
+ *
+ * Mixing structure:
+ *           |   ~B   |  ~W_3  |  ~H_1  |  ~H_2  |
+ *   ~chi_10 |  0.985 | -0.056 |  0.151 | -0.056 |
+ *   ~chi_20 |  0.106 |  0.940 | -0.281 |  0.164 |
+ *   ~chi_30 |  0.061 | -0.091 | -0.695 | -0.710 |
+ *   ~chi_40 |  0.119 | -0.325 | -0.644 |  0.682 |
+ *
+ *      L    |   ~W   |   ~H   |            R    |   ~W   |   ~H   |
+ *   ~chi_1+ | -0.911 |  0.411 |         ~chi_1+ | -0.970 |  0.241 |
+ *   ~chi_2+ |  0.411 |  0.911 |         ~chi_2+ |  0.241 |  0.970 |
+ *
+ *        |  ~b_L  |  ~b_R  |        |  ~t_L  |  ~t_R  |          | ~tau_L | ~tau_R |
+ *   ~b_1 |  0.930 |  0.367 |   ~t_1 |  0.553 |  0.833 |   ~tau_1 |  0.284 |  0.959 |
+ *   ~b_2 | -0.367 |  0.930 |   ~t_2 | -0.833 |  0.553 |   ~tau_2 | -0.959 |  0.284 |
+ *
+ * Couplings:
+ *     A_b =  -796.60          A_t =  -506.14    A_tau =  -251.54
+ *   alpha =    -0.11    tan(beta) =    10.00       mu =   352.16
+ *
+ ******************************** END OF PYSLHA *******************************
+  ALLOWING DECAYS TO GRAVITINOS 
+  (PYSLHA:) Reading in SLHA decay table for ~d_L            
+  (PYSLHA:) Reading in SLHA decay table for ~d_R            
+  (PYSLHA:) Reading in SLHA decay table for ~u_L            
+  (PYSLHA:) Reading in SLHA decay table for ~u_R            
+  (PYSLHA:) Reading in SLHA decay table for ~s_L            
+  (PYSLHA:) Reading in SLHA decay table for ~s_R            
+  (PYSLHA:) Reading in SLHA decay table for ~c_L            
+  (PYSLHA:) Reading in SLHA decay table for ~c_R            
+  (PYSLHA:) Reading in SLHA decay table for ~b_1            
+  (PYSLHA:) Reading in SLHA decay table for ~b_2            
+  (PYSLHA:) Reading in SLHA decay table for ~t_1            
+  (PYSLHA:) Reading in SLHA decay table for ~t_2            
+  (PYSLHA:) Reading in SLHA decay table for ~e_L-           
+  (PYSLHA:) Reading in SLHA decay table for ~e_R-           
+  (PYSLHA:) Reading in SLHA decay table for ~nu_eL          
+  (PYSLHA:) Reading in SLHA decay table for ~mu_L-          
+  (PYSLHA:) Reading in SLHA decay table for ~mu_R-          
+  (PYSLHA:) Reading in SLHA decay table for ~nu_muL         
+  (PYSLHA:) Reading in SLHA decay table for ~tau_1-         
+  (PYSLHA:) Reading in SLHA decay table for ~tau_2-         
+  (PYSLHA:) Reading in SLHA decay table for ~nu_tauL        
+  (PYSLHA:) Reading in SLHA decay table for ~g              
+  (PYSLHA:) Reading in SLHA decay table for ~chi_10         
+  (PYSLHA:) Reading in SLHA decay table for ~chi_20         
+  (PYSLHA:) Reading in SLHA decay table for ~chi_30         
+  (PYSLHA:) Reading in SLHA decay table for ~chi_40         
+  (PYSLHA:) Reading in SLHA decay table for ~chi_1+         
+  (PYSLHA:) Reading in SLHA decay table for ~chi_2+         
+  (PYSLHA:) Reading in SLHA decay table for h0              
+            Note: the Pythia gg->h/H/A cross section           is proportional to the h/H/A->gg width
+  (PYSLHA:) Reading in SLHA decay table for H0              
+            Note: the Pythia gg->h/H/A cross section           is proportional to the h/H/A->gg width
+  (PYSLHA:) Reading in SLHA decay table for A0              
+            Note: the Pythia gg->h/H/A cross section           is proportional to the h/H/A->gg width
+  (PYSLHA:) Reading in SLHA decay table for H+              
+  (PYSLHA:) Reading in SLHA decay table for t               
+
+ ==============================================================================
+ I                                                                            I
+ I             PYTHIA will be initialized for a p on pbar collider            I
+ I                  at   1960.000 GeV center-of-mass energy                   I
+ I                                                                            I
+ ==============================================================================
+
+ ******** PYMAXI: summary of differential cross-section maximum search ********
+
+           ==========================================================
+           I                                      I                 I
+           I  ISUB  Subprocess name               I  Maximum value  I
+           I                                      I                 I
+           ==========================================================
+           I                                      I                 I
+           I   96   Semihard QCD 2 -> 2           I    7.3748E+03   I
+           I  230   q + qbar' -> ~chi2 + ~chi+-1  I    4.0827E-10   I
+           I                                      I                 I
+           ==========================================================
+
+ ****** PYMULT: initialization of multiple interactions for MSTP(82) = 2 ******
+        pT0 = 1.55 GeV gives sigma(parton-parton) = 4.43E+02 mb: accepted
+
+ ****** PYMIGN: initialization of multiple interactions for MSTP(82) = 2 ******
+        pT0 = 1.55 GeV gives sigma(parton-parton) = 1.63E+02 mb: accepted
+
+ ********************** PYINIT: initialization completed **********************
+Close Decay File: susyhit_slha.out
+File Closed
+
+
+
+                    List of KF codes in program
+
+            1    d                            -1    dbar            
+            2    u                            -2    ubar            
+            3    s                            -3    sbar            
+            4    c                            -4    cbar            
+            5    b                            -5    bbar            
+            6    t                            -6    tbar            
+            7    b'                           -7    b'bar           
+            8    t'                           -8    t'bar           
+           11    e-                          -11    e+              
+           12    nu_e                        -12    nu_ebar         
+           13    mu-                         -13    mu+             
+           14    nu_mu                       -14    nu_mubar        
+           15    tau-                        -15    tau+            
+           16    nu_tau                      -16    nu_taubar       
+           17    tau'-                       -17    tau'+           
+           18    nu'_tau                     -18    nu'_taubar      
+           21    g               
+           22    gamma           
+           23    Z0              
+           24    W+                          -24    W-              
+           25    h0              
+           32    Z'0             
+           33    Z"0             
+           34    W'+                         -34    W'-             
+           35    H0              
+           36    A0              
+           37    H+                          -37    H-              
+           39    Graviton        
+           41    R0                          -41    Rbar0           
+           42    LQ_ue                       -42    LQ_uebar        
+         2101    ud_0                      -2101    ud_0bar         
+         3101    sd_0                      -3101    sd_0bar         
+         3201    su_0                      -3201    su_0bar         
+         4101    cd_0                      -4101    cd_0bar         
+         4201    cu_0                      -4201    cu_0bar         
+         4301    cs_0                      -4301    cs_0bar         
+         5101    bd_0                      -5101    bd_0bar         
+         5201    bu_0                      -5201    bu_0bar         
+         5301    bs_0                      -5301    bs_0bar         
+         5401    bc_0                      -5401    bc_0bar         
+         1103    dd_1                      -1103    dd_1bar         
+         2103    ud_1                      -2103    ud_1bar         
+         2203    uu_1                      -2203    uu_1bar         
+         3103    sd_1                      -3103    sd_1bar         
+         3203    su_1                      -3203    su_1bar         
+         3303    ss_1                      -3303    ss_1bar         
+         4103    cd_1                      -4103    cd_1bar         
+         4203    cu_1                      -4203    cu_1bar         
+         4303    cs_1                      -4303    cs_1bar         
+         4403    cc_1                      -4403    cc_1bar         
+         5103    bd_1                      -5103    bd_1bar         
+         5203    bu_1                      -5203    bu_1bar         
+         5303    bs_1                      -5303    bs_1bar         
+         5403    bc_1                      -5403    bc_1bar         
+         5503    bb_1                      -5503    bb_1bar         
+          111    pi0             
+          211    pi+                        -211    pi-             
+          221    eta             
+          311    K0                         -311    Kbar0           
+          130    K_L0            
+          310    K_S0            
+          321    K+                         -321    K-              
+          331    eta'            
+          411    D+                         -411    D-              
+          421    D0                         -421    Dbar0           
+          431    D_s+                       -431    D_s-            
+          441    eta_c           
+          511    B0                         -511    Bbar0           
+          521    B+                         -521    B-              
+          531    B_s0                       -531    B_sbar0         
+          541    B_c+                       -541    B_c-            
+          551    eta_b           
+          113    rho0            
+          213    rho+                       -213    rho-            
+          223    omega           
+          313    K*0                        -313    K*bar0          
+          323    K*+                        -323    K*-             
+          333    phi             
+          413    D*+                        -413    D*-             
+          423    D*0                        -423    D*bar0          
+          433    D*_s+                      -433    D*_s-           
+          443    J/psi           
+          513    B*0                        -513    B*bar0          
+          523    B*+                        -523    B*-             
+          533    B*_s0                      -533    B*_sbar0        
+          543    B*_c+                      -543    B*_c-           
+          553    Upsilon         
+        10113    b_10            
+        10213    b_1+                     -10213    b_1-            
+        10223    h_1             
+        10313    K_10                     -10313    K_1bar0         
+        10323    K_1+                     -10323    K_1-            
+        10333    h'_1            
+        10413    D_1+                     -10413    D_1-            
+        10423    D_10                     -10423    D_1bar0         
+        10433    D_1s+                    -10433    D_1s-           
+        10443    h_1c            
+        10513    B_10                     -10513    B_1bar0         
+        10523    B_1+                     -10523    B_1-            
+        10533    B_1s0                    -10533    B_1sbar0        
+        10543    B_1c+                    -10543    B_1c-           
+        10553    h_1b            
+        10111    a_00            
+        10211    a_0+                     -10211    a_0-            
+        10221    f_0             
+        10311    K*_00                    -10311    K*_0bar0        
+        10321    K*_0+                    -10321    K*_0-           
+        10331    f'_0            
+        10411    D*_0+                    -10411    D*_0-           
+        10421    D*_00                    -10421    D*_0bar0        
+        10431    D*_0s+                   -10431    D*_0s-          
+        10441    chi_0c          
+        10511    B*_00                    -10511    B*_0bar0        
+        10521    B*_0+                    -10521    B*_0-           
+        10531    B*_0s0                   -10531    B*_0sbar0       
+        10541    B*_0c+                   -10541    B*_0c-          
+        10551    chi_0b          
+        20113    a_10            
+        20213    a_1+                     -20213    a_1-            
+        20223    f_1             
+        20313    K*_10                    -20313    K*_1bar0        
+        20323    K*_1+                    -20323    K*_1-           
+        20333    f'_1            
+        20413    D*_1+                    -20413    D*_1-           
+        20423    D*_10                    -20423    D*_1bar0        
+        20433    D*_1s+                   -20433    D*_1s-          
+        20443    chi_1c          
+        20513    B*_10                    -20513    B*_1bar0        
+        20523    B*_1+                    -20523    B*_1-           
+        20533    B*_1s0                   -20533    B*_1sbar0       
+        20543    B*_1c+                   -20543    B*_1c-          
+        20553    chi_1b          
+          115    a_20            
+          215    a_2+                       -215    a_2-            
+          225    f_2             
+          315    K*_20                      -315    K*_2bar0        
+          325    K*_2+                      -325    K*_2-           
+          335    f'_2            
+          415    D*_2+                      -415    D*_2-           
+          425    D*_20                      -425    D*_2bar0        
+          435    D*_2s+                     -435    D*_2s-          
+          445    chi_2c          
+          515    B*_20                      -515    B*_2bar0        
+          525    B*_2+                      -525    B*_2-           
+          535    B*_2s0                     -535    B*_2sbar0       
+          545    B*_2c+                     -545    B*_2c-          
+          555    chi_2b          
+       100443    psi'            
+       100553    Upsilon'        
+         3122    Lambda0                   -3122    Lambdabar0      
+         4122    Lambda_c+                 -4122    Lambda_cbar-    
+         4132    Xi_c0                     -4132    Xi_cbar0        
+         4232    Xi_c+                     -4232    Xi_cbar-        
+         5122    Lambda_b0                 -5122    Lambda_bbar0    
+         5132    Xi_b-                     -5132    Xi_bbar+        
+         5232    Xi_b0                     -5232    Xi_bbar0        
+         5142    Xi_bc0                    -5142    Xi_bcbar0       
+         5242    Xi_bc+                    -5242    Xi_bcbar-       
+         5342    Omega_bc0                 -5342    Omega_bcbar0    
+         2112    n0                        -2112    nbar0           
+         2212    p+                        -2212    pbar-           
+         3112    Sigma-                    -3112    Sigmabar+       
+         3212    Sigma0                    -3212    Sigmabar0       
+         3222    Sigma+                    -3222    Sigmabar-       
+         3312    Xi-                       -3312    Xibar+          
+         3322    Xi0                       -3322    Xibar0          
+         4112    Sigma_c0                  -4112    Sigma_cbar0     
+         4212    Sigma_c+                  -4212    Sigma_cbar-     
+         4222    Sigma_c++                 -4222    Sigma_cbar--    
+         4312    Xi'_c0                    -4312    Xi'_cbar0       
+         4322    Xi'_c+                    -4322    Xi'_cbar-       
+         4332    Omega_c0                  -4332    Omega_cbar0     
+         4412    Xi_cc+                    -4412    Xi_ccbar-       
+         4422    Xi_cc++                   -4422    Xi_ccbar--      
+         4432    Omega_cc+                 -4432    Omega_ccbar-    
+         5112    Sigma_b-                  -5112    Sigma_bbar+     
+         5212    Sigma_b0                  -5212    Sigma_bbar0     
+         5222    Sigma_b+                  -5222    Sigma_bbar-     
+         5312    Xi'_b-                    -5312    Xi'_bbar+       
+         5322    Xi'_b0                    -5322    Xi'_bbar0       
+         5332    Omega_b-                  -5332    Omega_bbar+     
+         5412    Xi'_bc0                   -5412    Xi'_bcbar0      
+         5422    Xi'_bc+                   -5422    Xi'_bcbar-      
+         5432    Omega'_bc0                -5432    Omega'_bcba     
+         5442    Omega_bcc+                -5442    Omega_bccbar-   
+         5512    Xi_bb-                    -5512    Xi_bbbar+       
+         5522    Xi_bb0                    -5522    Xi_bbbar0       
+         5532    Omega_bb-                 -5532    Omega_bbbar+    
+         5542    Omega_bbc0                -5542    Omega_bbcbar0   
+         1114    Delta-                    -1114    Deltabar+       
+         2114    Delta0                    -2114    Deltabar0       
+         2214    Delta+                    -2214    Deltabar-       
+         2224    Delta++                   -2224    Deltabar--      
+         3114    Sigma*-                   -3114    Sigma*bar+      
+         3214    Sigma*0                   -3214    Sigma*bar0      
+         3224    Sigma*+                   -3224    Sigma*bar-      
+         3314    Xi*-                      -3314    Xi*bar+         
+         3324    Xi*0                      -3324    Xi*bar0         
+         3334    Omega-                    -3334    Omegabar+       
+         4114    Sigma*_c0                 -4114    Sigma*_cbar0    
+         4214    Sigma*_c+                 -4214    Sigma*_cbar-    
+         4224    Sigma*_c++                -4224    Sigma*_cbar--   
+         4314    Xi*_c0                    -4314    Xi*_cbar0       
+         4324    Xi*_c+                    -4324    Xi*_cbar-       
+         4334    Omega*_c0                 -4334    Omega*_cbar0    
+         4414    Xi*_cc+                   -4414    Xi*_ccbar-      
+         4424    Xi*_cc++                  -4424    Xi*_ccbar--     
+         4434    Omega*_cc+                -4434    Omega*_ccbar-   
+         4444    Omega*_ccc++              -4444    Omega*_cccbar-  
+         5114    Sigma*_b-                 -5114    Sigma*_bbar+    
+         5214    Sigma*_b0                 -5214    Sigma*_bbar0    
+         5224    Sigma*_b+                 -5224    Sigma*_bbar-    
+         5314    Xi*_b-                    -5314    Xi*_bbar+       
+         5324    Xi*_b0                    -5324    Xi*_bbar0       
+         5334    Omega*_b-                 -5334    Omega*_bbar+    
+         5414    Xi*_bc0                   -5414    Xi*_bcbar0      
+         5424    Xi*_bc+                   -5424    Xi*_bcbar-      
+         5434    Omega*_bc0                -5434    Omega*_bcbar0   
+         5444    Omega*_bcc+               -5444    Omega*_bccbar-  
+         5514    Xi*_bb-                   -5514    Xi*_bbbar+      
+         5524    Xi*_bb0                   -5524    Xi*_bbbar0      
+         5534    Omega*_bb-                -5534    Omega*_bbbar+   
+         5544    Omega*_bbc0               -5544    Omega*_bbcbar0  
+         5554    Omega*_bbb-               -5554    Omega*_bbbbar+  
+      1000001    ~d_L                   -1000001    ~d_Lbar         
+      1000002    ~u_L                   -1000002    ~u_Lbar         
+      1000003    ~s_L                   -1000003    ~s_Lbar         
+      1000004    ~c_L                   -1000004    ~c_Lbar         
+      1000005    ~b_1                   -1000005    ~b_1bar         
+      1000006    ~t_1                   -1000006    ~t_1bar         
+      1000011    ~e_L-                  -1000011    ~e_L+           
+      1000012    ~nu_eL                 -1000012    ~nu_eLbar       
+      1000013    ~mu_L-                 -1000013    ~mu_L+          
+      1000014    ~nu_muL                -1000014    ~nu_muLbar      
+      1000015    ~tau_1-                -1000015    ~tau_1+         
+      1000016    ~nu_tauL               -1000016    ~nu_tauLbar     
+      1000021    ~g              
+      1000022    ~chi_10         
+      1000023    ~chi_20         
+      1000024    ~chi_1+                -1000024    ~chi_1-         
+      1000025    ~chi_30         
+      1000035    ~chi_40         
+      1000037    ~chi_2+                -1000037    ~chi_2-         
+      1000039    ~Gravitino      
+      2000001    ~d_R                   -2000001    ~d_Rbar         
+      2000002    ~u_R                   -2000002    ~u_Rbar         
+      2000003    ~s_R                   -2000003    ~s_Rbar         
+      2000004    ~c_R                   -2000004    ~c_Rbar         
+      2000005    ~b_2                   -2000005    ~b_2bar         
+      2000006    ~t_2                   -2000006    ~t_2bar         
+      2000011    ~e_R-                  -2000011    ~e_R+           
+      2000012    ~nu_eR                 -2000012    ~nu_eRbar       
+      2000013    ~mu_R-                 -2000013    ~mu_R+          
+      2000014    ~nu_muR                -2000014    ~nu_muRbar      
+      2000015    ~tau_2-                -2000015    ~tau_2+         
+      2000016    ~nu_tauR               -2000016    ~nu_tauRbar     
+      3000111    pi_tc0          
+      3000211    pi_tc+                 -3000211    pi_tc-          
+      3000221    pi'_tc0         
+      3000331    eta_tc0         
+      3000113    rho_tc0         
+      3000213    rho_tc+                -3000213    rho_tc-         
+      3000223    omega_tc        
+      3100021    V8_tc           
+      3100111    pi_22_1_tc      
+      3200111    pi_22_8_tc      
+      3100113    rho_11_tc       
+      3200113    rho_12_tc       
+      3300113    rho_21_tc       
+      3400113    rho_22_tc       
+      4000001    d*                     -4000001    d*bar           
+      4000002    u*                     -4000002    u*bar           
+      4000011    e*-                    -4000011    e*bar+          
+      4000012    nu*_e0                 -4000012    nu*_ebar0       
+      5000039    Graviton*       
+      9900012    nu_Re           
+      9900014    nu_Rmu          
+      9900016    nu_Rtau         
+      9900023    Z_R0            
+      9900024    W_R+                   -9900024    W_R-            
+      9900041    H_L++                  -9900041    H_L--           
+      9900042    H_R++                  -9900042    H_R--           
+      9900110    rho_diff0       
+      9900210    pi_diffr+              -9900210    pi_diffr-       
+      9900220    omega_di        
+      9900330    phi_diff        
+      9900440    J/psi_di        
+      9902110    n_diffr0               -9902110    n_diffrbar0     
+      9902210    p_diffr+               -9902210    p_diffrbar-     
+      9900443    cc~[3S18]       
+      9900441    cc~[1S08]       
+      9910441    cc~[3P08]       
+      9900553    bb~[3S18]       
+      9900551    bb~[1S08]       
+      9910551    bb~[3P08]       
+ Event list level 1
+EvtGen:EvtGen version:        alpha-00-14-05 plus bug fixes
+EvtGen:CDF Revision:          2.00
+EvtGen:Initializing EvtGen
+EvtGen:Storing known decay models
+Will register EvtJetSet
+EvtGen:Registering CDF specific decay models
+EvtGen:Main decay file name  :/cdf/code/cdfsoft/dist/packages/EvtGen/development/DECAY.DEC
+EvtGen:PDT table file name   :/cdf/code/cdfsoft/dist/packages/EvtGen/development/pdt.table
+EvtGen:Initializing RadCorr=PHOTOS
+EvtGen:No RadCorr engine given in EvtGen::EvtGen constructor, will use default EvtPHOTOS.
+EvtGen:In readDecayFile, reading:/cdf/code/cdfsoft/dist/packages/EvtGen/development/DECAY.DEC
+EvtGen:As requested, PHOTOS will be turned on.
+EvtGen:VSS_BMIXCPT will generate mixing and CPT/CP effects in mixing:
+
+    Upsilon(4S) --> B0 + anti-B0
+
+using parameters:
+
+  delta(m)  = 0.502 hbar/ps
+  _freq     = 1.67 hbar/mm
+  dgog      = 0.00
+  dGamma    = 0.00 hbar/mm
+  q/p       = (1.00,0.00)
+  z         = (0.00,0.00)
+  tau       = 1.53 ps
+  x         = 0.768
+ chi(B0->B0bar) = 0.186
+ chi(B0bar->B0) = 0.186
+ Af         = (1.00,0.00)
+ Abarf      = (0.00,0.00)
+ Afbar      = (0.00,0.00)
+ Abarfbar   = (1.00,0.00)
+
+EvtGen:Redefined Partial wave for D_1+ to D*+ pi0 (2)
+EvtGen:Redefined Partial wave for D_1+ to D*0 pi+ (2)
+EvtGen:Redefined Partial wave for D_1- to D*- pi0 (2)
+EvtGen:Redefined Partial wave for D_1- to anti-D*0 pi- (2)
+EvtGen:Redefined Partial wave for D_10 to D*0 pi0 (2)
+EvtGen:Redefined Partial wave for D_10 to D*+ pi- (2)
+EvtGen:Redefined Partial wave for anti-D_10 to anti-D*0 pi0 (2)
+EvtGen:Redefined Partial wave for anti-D_10 to D*- pi+ (2)
+EvtGen:Redefined Partial wave for D_2*+ to D*+ pi0 (2)
+EvtGen:Redefined Partial wave for D_2*+ to D*0 pi+ (2)
+EvtGen:Redefined Partial wave for D_2*- to D*- pi0 (2)
+EvtGen:Redefined Partial wave for D_2*- to anti-D*0 pi- (2)
+EvtGen:Redefined Partial wave for D_2*0 to D*0 pi0 (2)
+EvtGen:Redefined Partial wave for D_2*0 to D*+ pi- (2)
+EvtGen:Redefined Partial wave for anti-D_2*0 to anti-D*0 pi0 (2)
+EvtGen:Redefined Partial wave for anti-D_2*0 to D*- pi+ (2)
+EvtGen:Given allowed decays, resetting minMass B_s0*0 5.68 to 5.77
+EvtGen:Given allowed decays, resetting minMass anti-B_s0*0 5.68 to 5.77
+EvtGen:Given allowed decays, resetting minMass B_s10 5.71 to 5.77
+EvtGen:Given allowed decays, resetting minMass anti-B_s10 5.71 to 5.77
+EvtGen:Given allowed decays, resetting minMass B_s2*0 5.65 to 5.82
+EvtGen:Given allowed decays, resetting minMass anti-B_s2*0 5.65 to 5.82
+EvtGen:Given allowed decays, resetting minMass B'_s10 5.64 to 5.82
+EvtGen:Given allowed decays, resetting minMass anti-B'_s10 5.64 to 5.82
+EvtGen:Given allowed decays, resetting minMass Lambda(1405)0 0.656 to 1.33
+EvtGen:Given allowed decays, resetting minMass anti-Lambda(1405)0 0.656 to 1.33
+EvtGen:Given allowed decays, resetting minMass Lambda(1800)0 0.00 to 1.33
+EvtGen:Given allowed decays, resetting minMass anti-Lambda(1800)0 0.00 to 1.33
+EvtGen:Given allowed decays, resetting minMass Lambda(1810)0 0.00 to 1.33
+EvtGen:Given allowed decays, resetting minMass anti-Lambda(1810)0 0.00 to 1.33
+EvtGen:Given allowed decays, resetting minMass Sigma(1660)0 0.160 to 1.25
+EvtGen:Given allowed decays, resetting minMass anti-Sigma(1660)0 0.160 to 1.25
+EvtGen:Given allowed decays, resetting minMass Sigma(1775)0 0.00 to 1.25
+EvtGen:Given allowed decays, resetting minMass anti-Sigma(1775)0 0.00 to 1.25
+EvtGen:Given allowed decays, resetting minMass Sigma_c0 2.42 to 2.43
+EvtGen:Given allowed decays, resetting minMass anti-Sigma_c0 2.42 to 2.43
+EvtGen:Given allowed decays, resetting minMass Sigma_c+ 2.42 to 2.42
+EvtGen:Given allowed decays, resetting minMass anti-Sigma_c- 2.42 to 2.42
+EvtGen:Given allowed decays, resetting minMass Sigma_c++ 2.42 to 2.43
+EvtGen:Given allowed decays, resetting minMass anti-Sigma_c-- 2.42 to 2.43
+EvtGen:Given allowed decays, resetting minMass Sigma_c*0 2.28 to 2.43
+EvtGen:Given allowed decays, resetting minMass anti-Sigma_c*0 2.28 to 2.43
+EvtGen:Given allowed decays, resetting minMass Sigma_c*++ 2.29 to 2.43
+EvtGen:Given allowed decays, resetting minMass anti-Sigma_c*-- 2.29 to 2.43
+EvtGen:Done initializing EvtGen
+ : 
+EvtGenInterface:****************************************************************************
+EvtGenInterface:****************************************************************************
+EvtGenInterface: EvtGen will correct particle energies if the mass calculated from the
+EvtGenInterface: 4-vector differs from the hepevt mass by more than 500 keV.
+EvtGenInterface:****************************************************************************
+EvtGenInterface:****************************************************************************
+ : 
+****| GENERATORS: generator configuration check PASSED |*****
+SiAlignmentManager will take alignments from ofotl_prd_read     150050 1 GOOD
+SiAlignmentManager opening db: ofotl_prd_read run: 150050 version: 1 status: GOOD
+DBEventLogger::OTLConnect(cdf_reader/xxxxx@cdfofread)
+ Alignment:    on: 1    wafers on:1
+Contents of SiAlignFrame : Run = 150050 Ver = 1 Stat = GOOD Size = 1
+AlignFrame  tag:  -0.10815  0.14523  0.26900  0.0002972  0.0008008  0.0015700
+Contents of SiAlignBarrel: Run = 150050 Ver = 1 Stat = GOOD Size = 8
+AlignBarrel tag:   0.00103 -0.00082 -0.03430 -0.0000942 -0.0000872 -0.0004300
+Contents of SiAlignLadder: Run = 150050 Ver = 1 Stat = GOOD Size = 352
+AlignLadder tag:  -0.00397  0.00073  0.00000 -0.0000359 -0.0000813  0.0027272
+Contents of SiAlignWafer: Run = 150050 Ver = 1 Stat = GOOD Size = 1752
+AlignWafer tag:   0.00693 -0.00028 -0.00115 -0.0000742  0.0017680 -0.0004231
+Contents of SiAlignWarp: Run = 150050 Ver = 1 Stat = GOOD Size = 1752
+AlignWarp tag :   0.0001242 -0.0000593  0.0000291
+
+ MZLINK.  Initialize Link Area  /GCHVIR/  for Store  0 NL/NS=     4     1
+
+ MZLINK.  Initialize Link Area  /GCDINA/  for Store  0 NL/NS=     4     4
+1************************************************************
+ *                                                          *
+ *    G E A N T  Version 3.2114      DATE/TIME 110831/1629  *
+ *                                                          *
+ *                      R U N      1                        *
+ *                                                          *
+ ************************************************************
+ *                                                          *
+ *      Data structure   Date   Time    GVERSN    ZVERSN    *
+ *      --------------   ----   ----    ------    ------    *
+ *                                                          *
+ *           INIT       110831  1629    3.2114     3.79     *
+ *                                                          *
+ *           KINE       110831  1629    3.2114     3.79     *
+ *                                                          *
+ *           HITS       110831  1629    3.2114     3.79     *
+ *                                                          *
+ *           DIGI       110831  1629    3.2114     3.79     *
+ *                                                          *
+ *     Random number seeds:          9876        54321      *
+ *     --------------------                                 *
+ *                                                          *
+ *----------------------------------------------------------*
+ *                                                          *
+ *              Standard TPAR for this run are              *
+ *              ------------------------------              *
+ *                                                          *
+ *  CUTGAM=  1.00 MeV  CUTELE=  1.00 MeV  CUTNEU= 10.00 MeV *
+ *  CUTHAD= 10.00 MeV  CUTMUO= 10.00 MeV                    *
+ *  BCUTE =  1.00 MeV  BCUTM =  1.00 MeV                    *
+ *  DCUTE = 10.00 TeV  DCUTM = 10.00 TeV  PPCUTM= 10.00 MeV *
+ *  IPAIR =        1.  ICOMP =        1.  IPHOT =        1. *
+ *  IPFIS =        0.  IDRAY =        0.  IANNI =        1. *
+ *  IBREM =        1.  IHADR =        1.  IMUNU =        1. *
+ *  IDCAY =        1.  ILOSS =        2.  IMULS =        1. *
+ *  IRAYL =        0.  ILABS =        0.  ISYNC =        0. *
+ *  ISTRA =        0.                                       *
+ *                                                          *
+ *                                                          *
+ *     Special TPAR for TMED  34   VACUUM B   1             *
+ *     -------------------------                            *
+ *  CUTGAM=  1.00 MeV  CUTELE=  1.00 MeV  CUTNEU= 10.00 MeV *
+ *  CUTHAD= 10.00 MeV  CUTMUO= 10.00 MeV                    *
+ *  BCUTE =  1.00 MeV  BCUTM =  1.00 MeV                    *
+ *  DCUTE = 10.00 TeV  DCUTM = 10.00 TeV  PPCUTM= 10.00 MeV *
+ *  IPAIR =        0.  ICOMP =        0.  IPHOT =        0. *
+ *  IPFIS =        0.  IDRAY =        0.  IANNI =        0. *
+ *  IBREM =        0.  IHADR =        0.  IMUNU =        0. *
+ *  IDCAY =        1.  ILOSS =        0.  IMULS =        0. *
+ *  IRAYL =        0.  ILABS =        0.  ISYNC =        0. *
+ *  ISTRA =        0.                                       *
+ *                                                          *
+ *                                                          *
+ *     Special TPAR for TMED  38   VACUUM NoB   1           *
+ *     -------------------------                            *
+ *  CUTGAM=  1.00 MeV  CUTELE=  1.00 MeV  CUTNEU= 10.00 MeV *
+ *  CUTHAD= 10.00 MeV  CUTMUO= 10.00 MeV                    *
+ *  BCUTE =  1.00 MeV  BCUTM =  1.00 MeV                    *
+ *  DCUTE = 10.00 TeV  DCUTM = 10.00 TeV  PPCUTM= 10.00 MeV *
+ *  IPAIR =        0.  ICOMP =        0.  IPHOT =        0. *
+ *  IPFIS =        0.  IDRAY =        0.  IANNI =        0. *
+ *  IBREM =        0.  IHADR =        0.  IMUNU =        0. *
+ *  IDCAY =        1.  ILOSS =        0.  IMULS =        0. *
+ *  IRAYL =        0.  ILABS =        0.*****
+***** Opened output file: cdfSim_dgamma_1.root on Wed Aug 31 16:30:36 2011
+
+*****
+GenInputManager Begin processing 1th record. Run 151435, Trigger 0
+  ISYNC =        0. *
+ *  ISTRA =        0.                                       *
+ *                                                          *
+ *                                                          *
+ *     Special TPAR for TMED  53   VACUUM B   2             *
+ *     -------------------------                            *
+ *  CUTGAM=  1.00 MeV  CUTELE=  1.00 MeV  CUTNEU= 10.00 MeV *
+ *  CUTHAD= 10.00 MeV  CUTMUO= 10.00 MeV                    *
+ *  BCUTE =  1.00 MeV  BCUTM =  1.00 MeV                    *
+ *  DCUTE = 10.00 TeV  DCUTM = 10.00 TeV  PPCUTM= 10.00 MeV *
+ *  IPAIR =        0.  ICOMP =        0.  IPHOT =        0. *
+ *  IPFIS =        0.  IDRAY =        0.  IANNI =        0. *
+ *  IBREM =        0.  IHADR =        0.  IMUNU =        0. *
+ *  IDCAY =        1.  ILOSS =        0.  IMULS =        0. *
+ *  IRAYL =        0.  ILABS =        0.  ISYNC =        0. *
+ *  ISTRA =        0.                                       *
+ *                                                          *
+ *                                                          *
+ *     Special TPAR for TMED  58   VACUUM NoB   2           *
+ *     -------------------------                            *
+ *  CUTGAM=  1.00 MeV  CUTELE=  1.00 MeV  CUTNEU= 10.00 MeV *
+ *  CUTHAD= 10.00 MeV  CUTMUO= 10.00 MeV                    *
+ *  BCUTE =  1.00 MeV  BCUTM =  1.00 MeV                    *
+ *  DCUTE = 10.00 TeV  DCUTM = 10.00 TeV  PPCUTM= 10.00 MeV *
+ *  IPAIR =        0.  ICOMP =        0.  IPHOT =        0. *
+ *  IPFIS =        0.  IDRAY =        0.  IANNI =        0. *
+ *  IBREM =        0.  IHADR =        0.  IMUNU =        0. *
+ *  IDCAY =        1.  ILOSS =        0.  IMULS =        0. *
+ *  IRAYL =        0.  ILABS =        0.  ISYNC =        0. *
+ *  ISTRA =        0.                                       *
+ *                                                          *
+ *                                                          *
+ ************************************************************
+
+
+Using drift model Garfield..
+Using drift model Garfield..
+Using drift model Garfield..
+Using drift model Garfield..
+Using drift model Garfield..
+Using drift model Garfield..
+Using drift model Garfield..
+Using drift model Garfield..
+ MediumType: 0 Media ID: 41
+ MediumType: 9 Media ID: 41
+ MediumType: 8 Media ID: 42
+ MediumType: 9 Media ID: 43
+ MediumType: 3 Media ID: 44
+ MediumType: 0 Media ID: 41
+ MediumType: 7 Media ID: 45
+ MediumType: 7 Media ID: 45
+ MediumType: 7 Media ID: 45
+ MediumType: 7 Media ID: 45
+ MediumType: 7 Media ID: 45
+ MediumType: 7 Media ID: 45
+ MediumType: 7 Media ID: 45
+ MediumType: 7 Media ID: 45
+ MediumType: 7 Media ID: 45
+ MediumType: 7 Media ID: 45
+ MediumType: 0 Media ID: 41
+ MediumType: 4 Media ID: 46
+ MediumType: 0 Media ID: 41
+ MediumType: 0 Media ID: 41
+ MediumType: 0 Media ID: 47
+ MediumType: 0 Media ID: 41
+ MediumType: 0 Media ID: 48
+ MediumType: 0 Media ID: 48
+ MediumType: 10 Media ID: 49
+ MediumType: 1 Media ID: 50
+ MediumType: 1 Media ID: 50
+ MediumType: 1 Media ID: 50
+ MediumType: 2 Media ID: 51
+ MediumType: 5 Media ID: 52
+  ********************************************************
+  ********   GFLASH-14      ***  Parameters   ************
+  ********************************************************
+  ****************  GFLASH STEERING  *********************
+  **  PEM  **  PHA   **   CEM  **  CHA  **  WHA  **  MPA  
+  ISSAMP      1         1         1         1         1
+    1         1         1         1         1
+  IFLASH1     4         4         4         4         4
+    4         4         4         4         4
+  IFLASH2     0         0         0         0         0
+    0         0         0         0         0
+  GFCNEU    0.0500    0.0500    0.0500    0.0500    0.0500
+  0.0500    0.0500    0.0500    0.0500    0.0500
+  GFCGAM    0.0100    0.0100    0.0100    0.0100    0.0100
+  0.0100    0.0100    0.0100    0.0100    0.0100
+  GFCPRO    0.0500    0.2500    0.0500    0.2500    0.2500
+  0.0500    0.2500    0.0500    0.2500    0.2500
+  CFLASH1   0.0000    0.0000    0.0000    0.0000    0.0000
+  0.0000    0.0000    0.0000    0.0000    0.0000
+  CFLASH2   0.0000    0.0000    0.0000    0.0000    0.0000
+  0.0000    0.0000    0.0000    0.0000    0.0000
+  CFLASH3   0.0000    0.0000    0.0000    0.0000    0.0000
+  0.0000    0.0000    0.0000    0.0000    0.0000
+  CFLASH4   0.0000    0.0000    0.0000    0.0000    0.0000
+  0.0000    0.0000    0.0000    0.0000    0.0000
+  ********************************************************
+  ****************  SHOWER RESPONSE  *********************
+  **  PEM  **  PHA   **   CEM  **  CHA  **  WHA  **  MPA  
+  RSPMIP    0.0776    0.0181    0.1658    0.0534    0.0534
+  0.1600    1.0000    1.0000    1.0000    0.0160
+  EBYMIP    0.7110    0.8950    0.6490    0.8840    0.8840
+  0.5000    1.0000    1.0000    1.0000    1.0000
+  PBYMIP    1.8200    3.2000    1.8500    2.3000    2.3000
+  2.2000    3.9000    3.9000    3.9000    3.9000
+  SAMELM1   0.1270    0.1800    0.1350    0.1900    0.1900
+  0.1800    0.1000    0.1000    0.1000    0.1800
+  SAMELM2   0.0000    0.0000    0.0000    0.0000    0.0000
+  0.0000    0.0000    0.0000    0.0000    0.0000
+  SAMELM3   0.0137    0.1000    0.0000    0.0000    0.0000
+  0.0000    0.0000    0.0000    0.0000    0.0000
+  FLUHAD1   0.1600    0.1610    0.1500    0.1300    0.1300
+  0.0000    0.3600    0.3600    0.3600    0.3600
+  FLUHAD2   0.0000    0.0000    0.0000    0.0000    0.0000
+  0.0000    0.0000    0.0000    0.0000    0.0000
+  FLUHAD3   0.0440    0.0440    0.0530    0.0400    0.0400
+  0.4000    0.0000    0.0000    0.0000    0.0440
+  SAMHAD1   0.1200    0.3500    0.1800    0.2300    0.2300
+  0.4000    0.4000    0.4000    0.4000    0.4000
+  SAMHAD2   0.0000    0.0000    0.0000    0.0000    0.0000
+  0.0000    0.0000    0.0000    0.0000    0.0000
+  SAMHAD3   0.0100    0.0320    0.0380    0.0430    0.0430
+  0.0000    0.0000    0.0000    0.0000    0.0000
+  RLTHAD   32.7000   23.7000   32.7000   23.7000   23.7000
+ 32.7000   23.7000   23.7000   23.7000   23.7000
+  ECRIT     9.6600   22.0000    9.4800   22.0000   22.0000
+ 10.0000   79.0000   22.0000   52.0000   22.0000
+  SFREQ     0.8775    0.0000    0.8890    0.0000    0.0000
+  0.8000    0.2000    0.0000    0.0000    0.0000
+  EBM       0.2960    0.1050    0.3500    0.1100    0.1100
+  0.3000    0.0000    0.0000    0.0000    0.0000
+  ********************************************************
+************ PMT simulation package ***************
+                version    0.0600
+     simulation mode  7
+     sw_light         1
+     sw_gain          1
+     sw_pedestal      1
+     light yield      7.00 # of pes/mip
+     pedestal sigma   0.100
+     snglpe sigma     0.170
+     mip energy       0.00240 GeV
+***************************************************
+GenInputManager Begin processing 2th record. Run 151435, Trigger 1
+DBEventLogger::OTLrelease(cdf_reader/xxxxx@cdfofread)
+EvtGenFinding B Mesons and about to enter DecayAll
+1
+ ********************************************************************************
+ *                                                                              *
+ *                          ==========================                          *
+ *                            PHOTOS, Version:  2. 2                            *
+ *                            Released at:  15/ 3/99                            *
+ *                          ==========================                          *
+ *                                                                              *
+ *                  PHOTOS QED Corrections in Particle Decays                   *
+ *                                                                              *
+ *         Monte Carlo Program - by E. Barberio, B. van Eijk and Z. Was         *
+ *         From version 2.0 on - by E.B. and Z.W.                               *
+ *                                                                              *
+ ********************************************************************************
+ *                                                                              *
+ *                  Internal input parameters:                                  *
+ *                                                                              *
+ *                  INTERF= T  ISEC= T  IFTOP= T                                *
+ *                  ALPHA_QED= 0.00730   XPHCUT= 0.01000                        *
+ *                                                                              *
+ *                  option with interference is active                          *
+ *                  option with double photons is active                        *
+ *                  emision in t tbar production is active                      *
+ *                                                                              *
+ *          WARNING (1): /HEPEVT/ is not anymore the standard common block      *
+ *                       This version of PHOTOS uses /XHEPEVT/ with double      *
+ *                       precision (REAL*8) variables                           *
+ *          WARNING (2): check dims. of /hepevt/ /phoqed/ /ph_hepevt/.          *
+ *          HERE:                     d_h_nmxhep=4000  and  NMXHEP=10000        *
+ *                                                                              *
+ ********************************************************************************
+ Message from PHCORK(MODCOR):: initialization
+ MODOP=1 -- no corrections on event: DEFAULT
+DBEventLogger::OTLConnect(cdf_reader/xxxxx@cdfofread)
+Loading CES constants for run 151435
+ CHKLOG: ces_data:Frz_5_Set1_31STP_2.Dab logical translation defaults to /cdf/code/cdfsoft/dist/releases/development/cesData/frz_5_set1_31stp_2.dab                                                                                                                                                                                                                                                                                                                                                                             
+ CHKLOG: ces_data:Frz_10_Set1_31STP_2.Dab logical translation defaults to /cdf/code/cdfsoft/dist/releases/development/cesData/frz_10_set1_31stp_2.dab                                                                                                                                                                                                                                                                                                                                                                           
+ CHKLOG: ces_data:Frz_25_Set1_31STP_2.Dab logical translation defaults to /cdf/code/cdfsoft/dist/releases/development/cesData/frz_25_set1_31stp_2.dab                                                                                                                                                                                                                                                                                                                                                                           
+ CHKLOG: ces_data:Frz_50_Set1_31STP_2.Dab logical translation defaults to /cdf/code/cdfsoft/dist/releases/development/cesData/frz_50_set1_31stp_2.dab                                                                                                                                                                                                                                                                                                                                                                           
+ CHKLOG: ces_data:Frz_100_Set1_31STP_2.Dab logical translation defaults to /cdf/code/cdfsoft/dist/releases/development/cesData/frz_100_set1_31stp_2.dab                                                                                                                                                                                                                                                                                                                                                                         
+ CHKLOG: ces_data:Frz_150_Set1_31STP_2.Dab logical translation defaults to /cdf/code/cdfsoft/dist/releases/development/cesData/frz_150_set1_31stp_2.dab                                                                                                                                                                                                                                                                                                                                                                         
+ mxgkin  250
+%MostRecent: creating a 100% full SiDBInfoSet with dummy SiDBInfos.
+             This may take a while.
+%MostRecent: done with creating a full SiDBInfoSet.
+>>>> Pedestals are present for run 151435
+     Retrieved run=151483 version=2 status=COMPLETE from the database.
+>>>> Dead channels are present for run 151435
+     Retrieved run=151441 version=1 status=COMPLETE from the database.
+GenInputManager Begin processing 3th record. Run 151435, Trigger 2
+DBEventLogger::OTLrelease(cdf_reader/xxxxx@cdfofread)
+PYEVNT event no. 2 level 1
+
+
+
+                            Event listing (summary)
+
+    I particle/jet KS     KF  orig    p_x      p_y      p_z       E        m
+
+    1 !p+!         21    2212    0    0.000    0.000  980.000  980.000    0.938
+    2 !pbar-!      21   -2212    0    0.000    0.000 -980.000  980.000    0.938
+ ==============================================================================
+    3 !u!          21       2    1    1.028    0.671  233.302  233.305    0.000
+    4 !dbar!       21      -1    2    2.117   -0.359 -200.970  200.982    0.000
+    5 !u!          21       2    3    4.148    8.275  191.610  191.834    0.000
+    6 !dbar!       21      -1    4    2.836   -0.052 -196.609  196.630    0.000
+    7 !~chi_1+!    21 1000024    0   65.544   -7.162   33.203  194.246  179.671
+    8 !~chi_20!    21 1000023    0  -58.559   15.385  -38.202  194.218  180.542
+    9 !~chi_10!    21 1000022    7   32.268   18.875   16.712  105.351   97.068
+   10 !W+!         21      24    7   33.276  -26.037   16.491   88.895   76.453
+   11 !~chi_10!    21 1000022    8   -5.545  -21.126    6.834   99.855   97.197
+   12 !Z0!         21      23    8  -53.014   36.511  -45.036   94.363   52.274
+   13 !Graviton*!  21 5000039    9  -29.188  -13.666   15.525   35.801    1.400
+   14 !~Gravitino! 21 1000039    9   61.456   32.542    1.187   69.550    0.000
+   15 !dbar!       21      -1   10   30.143   23.165    5.993   38.487    0.330
+   16 !u!          21       2   10    3.133  -49.202   10.498   50.408    0.330
+   17 !Graviton*!  21 5000039   11  -40.076  -41.437   -5.534   57.928    1.400
+   18 !~Gravitino! 21 1000039   11   34.530   20.311   12.368   41.927    0.000
+   19 !nu_mu!      21      14   12  -60.673   39.882  -33.126   79.807    0.000
+   20 !nu_mubar!   21     -14   12    7.659   -3.372  -11.910   14.556    0.000
+   21 !e-!         21      11   13   -6.708   -3.799    3.740    8.569    0.001
+   22 !e+!         21     -11   13  -22.480   -9.867   11.785   27.233    0.001
+   23 !e-!         21      11   17   -7.121   -8.106   -0.858   10.824    0.001
+   24 !e+!         21     -11   17  -32.955  -33.331   -4.676   47.105    0.001
+ ==============================================================================
+   25 (~chi_1+)    11 1000024    7   65.544   -7.162   33.203  194.246  179.671
+   26 (~chi_20)    11 1000023    8  -58.559   15.385  -38.202  194.218  180.542
+   27 (~chi_10)    11 1000022    9   32.268   18.875   16.712  105.351   97.068
+   28 (W+)         11      24   10   33.276  -26.037   16.491   88.895   76.453
+   29 (~chi_10)    11 1000022   11   -5.545  -21.126    6.834   99.855   97.197
+   30 (Z0)         11      23   12  -53.014   36.511  -45.036   94.363   52.274
+   31 (Graviton*)  11 5000039   13  -29.188  -13.666   15.525   35.801    1.400
+   32 ~Gravitino    1 1000039   14   61.456   32.542    1.187   69.550    0.000
+   33 (Graviton*)  11 5000039   17  -40.076  -41.437   -5.534   57.928    1.400
+   34 ~Gravitino    1 1000039   18   34.530   20.311   12.368   41.927    0.000
+   35 nu_mu         1      14   19  -60.673   39.882  -33.126   79.807    0.000
+   36 nu_mubar      1     -14   20    7.659   -3.372  -11.910   14.556    0.000
+   37 e+            1     -11   22  -22.480   -9.867   11.785   27.232    0.001
+   38 e-            1      11   21   -6.709   -3.799    3.741    8.569    0.001
+   39 gamma         1      22   21    0.000    0.000    0.000    0.000    0.000
+   40 e+            1     -11   24  -32.955  -33.331   -4.676   47.105    0.001
+   41 e-            1      11   23   -7.120   -8.105   -0.858   10.822    0.001
+   42 gamma         1      22   23   -0.001   -0.001    0.000    0.002    0.000
+   43 (dbar)    A  12      -1   15   27.737   20.016    5.401   34.630    0.330
+   44 (g)       I  12      21   15    1.581    2.400    0.450    2.909    0.000
+   45 (g)       I  12      21   16    0.271   -2.623    1.142    2.873    0.000
+   46 (g)       I  12      21   16   -3.585   -7.316    1.823    8.349    0.000
+   47 (g)       I  12      21   16    0.487   -1.374   -0.019    1.458    0.000
+   48 (g)       I  12      21   16    1.588   -6.325    2.194    6.881    0.000
+   49 (g)       I  12      21   16    4.642  -29.139    5.403   29.997    0.000
+   50 (u)       V  11       2   16    0.554   -1.675    0.097    1.797    0.330
+   51 (ud_0)    A  12    2101    1   -1.028   -0.671  517.241  517.243    0.579
+   52 (g)       I  12      21    3    0.194   -1.408   36.670   36.698    0.000
+   53 (g)       I  12      21    3    0.325   -2.699    0.643    2.794    0.000
+   54 (g)       I  12      21    3   -3.869   -3.477    0.153    5.204    0.000
+   55 (g)       I  12      21    3    0.277   -0.039   -0.128    0.308    0.000
+   56 (g)       I  12      21    0   -0.348    1.151   20.042   20.078    0.000
+   57 (g)       I  12      21    0   -2.198    2.176  119.145  119.185    0.000
+   58 (g)       I  12      21    0    0.170    0.172   64.746   64.747    0.000
+   59 (g)       I  12      21    0   -1.235   -0.215    7.134    7.244    0.000
+   60 (g)       I  12      21    0   -0.170   -0.172    1.482    1.502    0.000
+   61 (g)       I  12      21    0    0.348   -1.151    6.766    6.872    0.000
+   62 (g)       I  12      21    0    1.235    0.215    3.278    3.510    0.000
+   63 (g)       I  12      21    0    0.237    0.045    0.697    0.738    0.000
+   64 (g)       I  12      21    0    0.322   -0.356    0.295    0.563    0.000
+   65 (g)       I  12      21    0    2.198   -2.176   -0.270    3.105    0.000
+   66 (g)       I  12      21    0   -0.480   -0.992   -1.713    2.037    0.000
+   67 (g)       I  12      21    0    0.460    0.689  -38.719   38.728    0.000
+   68 (g)       I  12      21    0   -0.376    0.393  -29.670   29.675    0.000
+   69 (g)       I  12      21    0   -1.392    0.064 -211.558  211.563    0.000
+   70 (g)       I  12      21    0   -0.237   -0.045  -58.474   58.474    0.000
+   71 (g)       I  12      21    4   -0.767   -0.288   -0.008    0.819    0.000
+   72 (uu_1bar) V  11   -2203    2   -2.117    0.359 -304.737  304.745    0.771
+   73 (g)       A  12      21    0   -1.264    0.978    1.837    2.435    0.000
+   74 (g)       I  12      21    0    0.480    0.992   -0.044    1.103    0.000
+   75 (g)       I  12      21    0    1.392   -0.064  -10.432   10.524    0.000
+   76 (g)       I  12      21    0    1.264   -0.978  -91.103   91.117    0.000
+   77 (g)       I  12      21    0    0.376   -0.393  -27.328   27.333    0.000
+   78 (g)       I  12      21    0   -0.322    0.356   -1.883    1.943    0.000
+   79 (g)       V  11      21    0   -0.460   -0.689    0.934    1.249    0.000
+ ==============================================================================
+   80 (string)     11      92   43   33.276  -26.037   16.491   88.895   76.453
+   81 (omega)      11     223   80   23.051   16.339    4.309   28.592    0.787
+   82 (rho+)       11     213   80    3.947    4.346    0.923    6.000    0.823
+   83 (rho-)       11    -213   80    1.185   -0.162    0.566    1.561    0.828
+   84 (eta)        11     221   80    0.810    0.166    0.295    1.035    0.547
+   85 (pi0)        11     111   80    0.098    0.966    0.153    0.992    0.135
+   86 (rho0)       11     113   80    0.026   -1.033    0.084    1.153    0.504
+   87 (K*bar0)     11    -313   80   -1.191   -2.582    1.074    3.151    0.831
+   88 (K*0)        11     313   80   -0.091   -3.228    0.796    3.451    0.923
+   89 (K*bar0)     11    -313   80   -0.789   -1.809    0.482    2.236    0.933
+   90 (K0)         11     311   80    0.485   -3.755    0.852    3.912    0.498
+   91 (omega)      11     223   80   -0.165   -1.779    0.005    1.952    0.787
+   92 (rho+)       11     213   80    1.411   -9.002    1.612    9.285    0.761
+   93 (pi0)        11     111   80    1.558   -5.449    1.877    5.972    0.135
+   94 (omega)      11     223   80    2.941  -19.054    3.464   19.604    0.777
+   95 (string)     11      92   51   -8.450   -8.425  133.018 1435.832 1429.608
+   96 n0            1    2112   95   -0.032    0.027  233.739  233.740    0.940
+   97 pi+           1     211   95   -0.186   -0.710  120.152  120.154    0.140
+   98 (rho0)       11     113   95   -0.611   -0.860   70.072   70.087    0.982
+   99 pi-           1    -211   95   -0.565   -0.074   80.086   80.088    0.140
+  100 (K*bar0)     11    -313   95    0.715    0.409   24.335   24.365    0.895
+  101 (K*+)        11     323   95   -0.300   -0.773   15.083   15.133    0.902
+  102 pi-           1    -211   95   -0.295   -0.380    4.899    4.925    0.140
+  103 (rho0)       11     113   95    0.552    0.208    1.504    1.747    0.666
+  104 (omega)      11     223   95   -0.019   -1.032    1.268    1.815    0.790
+  105 (K*bar0)     11    -313   95    0.279   -0.039    1.612    1.853    0.869
+  106 (eta)        11     221   95   -0.235   -0.392    0.598    0.931    0.547
+  107 (eta')       11     331   95    0.186   -0.679    0.914    1.499    0.958
+  108 K+            1     321   95   -1.750   -1.824   -0.147    2.579    0.494
+  109 pi-           1    -211   95   -0.001   -0.588    0.591    0.845    0.140
+  110 (rho0)       11     113   95   -0.776   -0.816    0.373    1.485    0.894
+  111 (eta')       11     331   95   -1.085   -0.515    1.296    2.010    0.958
+  112 (rho+)       11     213   95   -0.037   -0.242    0.969    1.477    1.087
+  113 pi-           1    -211   95    0.040   -0.050    0.018    0.155    0.140
+  114 (eta')       11     331   95   -0.393   -0.086   10.109   10.163    0.958
+  115 nbar0         1   -2112   95   -0.088    0.671    7.634    7.721    0.940
+  116 p+            1    2212   95   -0.394    0.944   34.963   34.991    0.938
+  117 (pi0)        11     111   95   -0.226    0.115   48.166   48.167    0.135
+  118 (pi0)        11     111   95   -0.085    0.693   11.145   11.168    0.135
+  119 pi-           1    -211   95   -1.564    1.953   82.564   82.602    0.140
+  120 (rho+)       11     213   95   -0.563   -1.073    8.725    8.842    0.768
+  121 (rho-)       11    -213   95   -0.006   -0.174    9.406    9.441    0.791
+  122 nbar0         1   -2112   95    0.634   -0.590    3.209    3.454    0.940
+  123 p+            1    2212   95    0.043    0.006    2.334    2.516    0.938
+  124 (rho-)       11    -213   95    0.941   -1.038    1.871    2.431    0.670
+  125 (omega)      11     223   95    1.096   -0.235   -0.104    1.380    0.800
+  126 (rho+)       11     213   95    0.245   -0.303   -0.382    0.675    0.398
+  127 (omega)      11     223   95   -0.262   -0.805    0.240    1.183    0.791
+  128 (pi0)        11     111   95    0.885   -0.253   -1.083    1.427    0.135
+  129 (eta)        11     221   95    0.150   -0.445   -0.379    0.815    0.547
+  130 (K*-)        11    -323   95    0.005    0.143   -1.869    2.086    0.915
+  131 (K*0)        11     313   95    0.119   -0.634   -5.631    5.747    0.948
+  132 (rho+)       11     213   95   -0.532    0.549  -43.044   43.057    0.738
+  133 (omega)      11     223   95   -0.056   -0.362  -61.396   61.402    0.786
+  134 (rho0)       11     113   95   -0.554    0.085  -61.978   61.984    0.658
+  135 pi-           1    -211   95    0.342   -0.038   -1.618    1.660    0.140
+  136 (eta')       11     331   95   -0.576    0.871 -125.652  125.660    0.957
+  137 (eta)        11     221   95   -0.674    0.090  -11.876   11.908    0.547
+  138 pi+           1     211   95    0.152   -0.791   -7.529    7.573    0.140
+  139 pbar-         1   -2212   95   -0.986    0.178   -6.097    6.249    0.938
+  140 (rho0)       11     113   95    0.732    0.623   -7.091    7.176    0.530
+  141 p+            1    2212   95   -0.604   -0.402   -3.534    3.727    0.938
+  142 (omega)      11     223   95    0.063   -0.520   -2.253    2.443    0.785
+  143 pi-           1    -211   95    0.409    0.659   -7.411    7.453    0.140
+  144 (pi0)        11     111   95   -0.879   -0.263  -10.664   10.705    0.135
+  145 (rho+)       11     213   95   -0.665    0.426 -147.732  147.736    0.751
+  146 pbar-         1   -2212   95   -0.822    0.052  -85.699   85.708    0.938
+  147 (rho-)       11    -213   95   -0.216   -0.139  -51.687   51.693    0.791
+  148 (string)     11      92   73    1.465    0.202 -128.019  135.704   44.995
+  149 (rho0)       11     113  148   -0.022    0.322   -7.687    7.720    0.643
+  150 (eta)        11     221  148   -0.461    0.013  -10.829   10.852    0.547
+  151 (rho0)       11     113  148    0.712   -0.107  -16.522   16.558    0.812
+  152 (rho+)       11     213  148   -0.214    0.018  -10.971   11.020    1.022
+  153 (rho0)       11     113  148    0.056   -0.191   -2.772    2.825    0.505
+  154 (pi0)        11     111  148    0.553   -0.152   -0.346    0.683    0.135
+  155 (rho-)       11    -213  148   -0.706    0.005   -0.824    1.483    1.010
+  156 (eta)        11     221  148   -0.562    0.381    0.227    0.901    0.547
+  157 (rho+)       11     213  148    0.216   -0.091    0.153    0.937    0.894
+  158 (pi0)        11     111  148    0.026    0.555    0.227    0.616    0.135
+  159 pbar-         1   -2212  148   -0.248    0.125   -0.066    0.981    0.938
+  160 (omega)      11     223  148   -0.536   -0.464   -0.317    1.098    0.777
+  161 p+            1    2212  148   -0.243    1.045   -0.331    1.463    0.938
+  162 (pi0)        11     111  148    0.321   -0.429   -0.348    0.653    0.135
+  163 (rho-)       11    -213  148    1.003    0.447   -6.572    6.705    0.743
+  164 (Sigma*bar0) 11   -3214  148   -0.524   -0.525  -15.122   15.204    1.392
+  165 (Sigma*+)    11    3224  148    1.661   -0.005  -44.631   44.684    1.385
+  166 pi-           1    -211  148    0.432   -0.744  -11.287   11.320    0.140
+  167 pi-           1    -211   81    6.857    4.564    1.178    8.322    0.140
+  168 pi+           1     211   81    6.167    4.544    1.336    7.777    0.140
+  169 (pi0)        11     111   81   10.027    7.231    1.795   12.493    0.135
+  170 pi+           1     211   82    3.065    2.982    0.886    4.370    0.140
+  171 (pi0)        11     111   82    0.881    1.364    0.037    1.630    0.135
+  172 pi-           1    -211   83   -0.052   -0.110   -0.017    0.186    0.140
+  173 (pi0)        11     111   83    1.237   -0.052    0.583    1.375    0.135
+  174 (pi0)        11     111   84    0.419    0.146    0.198    0.504    0.135
+  175 (pi0)        11     111   84    0.038    0.020    0.047    0.149    0.135
+  176 (pi0)        11     111   84    0.353   -0.001    0.050    0.381    0.135
+  177 gamma         1      22   85    0.076    0.698    0.171    0.722    0.000
+  178 gamma         1      22   85    0.022    0.268   -0.018    0.269    0.000
+  179 pi+           1     211   86    0.203   -0.735    0.074    0.779    0.140
+  180 pi-           1    -211   86   -0.177   -0.299    0.010    0.374    0.140
+  181 K-            1    -321   87   -0.467   -1.554    0.567    1.788    0.494
+  182 pi+           1     211   87   -0.724   -1.028    0.506    1.363    0.140
+  183 K+            1     321   88    0.005   -1.975    0.176    2.043    0.494
+  184 pi-           1    -211   88   -0.096   -1.253    0.620    1.408    0.140
+  185 (Kbar0)      11    -311   89   -0.763   -1.775    0.562    2.073    0.498
+  186 (pi0)        11     111   89   -0.026   -0.034   -0.081    0.163    0.135
+  187 K_S0          1     310   90    0.485   -3.755    0.852    3.912    0.498
+  188 pi+           1     211   91    0.167   -0.255    0.028    0.337    0.140
+  189 pi-           1    -211   91   -0.220   -0.608   -0.140    0.676    0.140
+  190 (pi0)        11     111   91   -0.113   -0.916    0.117    0.940    0.135
+  191 pi+           1     211   92    0.659   -6.104    0.932    6.212    0.140
+  192 (pi0)        11     111   92    0.752   -2.898    0.680    3.073    0.135
+  193 gamma         1      22   93    1.209   -4.368    1.460    4.762    0.000
+  194 gamma         1      22   93    0.349   -1.081    0.416    1.210    0.000
+  195 pi+           1     211   94    0.752   -4.536    0.613    4.641    0.140
+  196 pi-           1    -211   94    1.878  -11.792    2.368   12.173    0.140
+  197 (pi0)        11     111   94    0.311   -2.726    0.483    2.789    0.135
+  198 pi+           1     211   98   -0.074   -0.067   37.629   37.629    0.140
+  199 pi-           1    -211   98   -0.537   -0.793   32.443   32.458    0.140
+  200 K-            1    -321  100    0.693    0.480   16.572   16.601    0.494
+  201 pi+           1     211  100    0.022   -0.072    7.762    7.764    0.140
+  202 (K0)         11     311  101   -0.159   -0.374    5.184    5.224    0.498
+  203 pi+           1     211  101   -0.141   -0.400    9.899    9.909    0.140
+  204 pi+           1     211  103   -0.067    0.057    0.662    0.682    0.140
+  205 pi-           1    -211  103    0.619    0.151    0.842    1.065    0.140
+  206 pi+           1     211  104   -0.140   -0.207    0.110    0.307    0.140
+  207 pi-           1    -211  104   -0.042   -0.715    0.862    1.129    0.140
+  208 (pi0)        11     111  104    0.163   -0.110    0.295    0.380    0.135
+  209 (Kbar0)      11    -311  105    0.188    0.077    0.538    0.761    0.498
+  210 (pi0)        11     111  105    0.091   -0.116    1.074    1.092    0.135
+  211 pi+           1     211  106    0.047   -0.133    0.187    0.273    0.140
+  212 pi-           1    -211  106   -0.192   -0.218    0.360    0.483    0.140
+  213 (pi0)        11     111  106   -0.090   -0.042    0.051    0.175    0.135
+  214 pi+           1     211  107    0.035   -0.077    0.013    0.164    0.140
+  215 pi-           1    -211  107    0.102   -0.155    0.068    0.242    0.140
+  216 (eta)        11     221  107    0.048   -0.448    0.833    1.094    0.547
+  217 pi+           1     211  110   -0.878   -0.399    0.346    1.034    0.140
+  218 pi-           1    -211  110    0.101   -0.417    0.027    0.452    0.140
+  219 gamma         1      22  111   -0.098   -0.043    0.258    0.279    0.000
+  220 (rho0)       11     113  111   -0.987   -0.473    1.038    1.731    0.849
+  221 pi+           1     211  112    0.486   -0.213    0.642    0.845    0.140
+  222 (pi0)        11     111  112   -0.523   -0.029    0.327    0.632    0.135
+  223 gamma         1      22  114   -0.126   -0.079    3.123    3.126    0.000
+  224 (omega)      11     223  114   -0.266   -0.008    6.987    7.036    0.791
+  225 gamma         1      22  117   -0.034    0.032    2.908    2.908    0.000
+  226 gamma         1      22  117   -0.192    0.084   45.258   45.259    0.000
+  227 gamma         1      22  118   -0.059    0.281    5.577    5.585    0.000
+  228 gamma         1      22  118   -0.026    0.412    5.568    5.583    0.000
+  229 pi+           1     211  120   -0.160   -0.726    6.754    6.796    0.140
+  230 (pi0)        11     111  120   -0.403   -0.348    1.971    2.046    0.135
+  231 pi-           1    -211  121    0.362   -0.136    4.305    4.325    0.140
+  232 (pi0)        11     111  121   -0.368   -0.037    5.101    5.116    0.135
+  233 pi-           1    -211  124    0.717   -0.945    1.146    1.655    0.140
+  234 (pi0)        11     111  124    0.224   -0.094    0.725    0.776    0.135
+  235 pi-           1    -211  125    0.142    0.035   -0.129    0.240    0.140
+  236 pi+           1     211  125    0.644   -0.188   -0.215    0.719    0.140
+  237 (pi0)        11     111  125    0.309   -0.082    0.240    0.422    0.135
+  238 pi+           1     211  126    0.249   -0.261   -0.367    0.533    0.140
+  239 (pi0)        11     111  126   -0.004   -0.042   -0.015    0.142    0.135
+  240 pi-           1    -211  127   -0.174   -0.220    0.178    0.360    0.140
+  241 pi+           1     211  127    0.018   -0.377    0.268    0.483    0.140
+  242 (pi0)        11     111  127   -0.106   -0.208   -0.206    0.340    0.135
+  243 gamma         1      22  128    0.535   -0.084   -0.618    0.822    0.000
+  244 gamma         1      22  128    0.350   -0.169   -0.464    0.605    0.000
+  245 pi-           1    -211  129    0.193   -0.270   -0.271    0.451    0.140
+  246 pi+           1     211  129    0.031   -0.058   -0.049    0.162    0.140
+  247 (pi0)        11     111  129   -0.074   -0.117   -0.058    0.202    0.135
+  248 (Kbar0)      11    -311  130    0.240    0.063   -1.601    1.695    0.498
+  249 pi-           1    -211  130   -0.235    0.080   -0.268    0.391    0.140
+  250 K+            1     321  131   -0.038   -0.185   -4.177    4.210    0.494
+  251 pi-           1    -211  131    0.157   -0.449   -1.454    1.536    0.140
+  252 pi+           1     211  132   -0.307    0.402  -38.310   38.314    0.140
+  253 (pi0)        11     111  132   -0.224    0.147   -4.734    4.743    0.135
+  254 pi-           1    -211  133    0.208   -0.187  -19.967   19.970    0.140
+  255 pi+           1     211  133    0.071   -0.037   -9.855    9.856    0.140
+  256 (pi0)        11     111  133   -0.335   -0.138  -31.574   31.576    0.135
+  257 pi-           1    -211  134   -0.374    0.332  -33.242   33.246    0.140
+  258 pi+           1     211  134   -0.180   -0.248  -28.736   28.738    0.140
+  259 gamma         1      22  136   -0.174    0.348  -33.702   33.704    0.000
+  260 (omega)      11     223  136   -0.402    0.523  -91.950   91.956    0.787
+  261 (pi0)        11     111  137   -0.239    0.156   -3.421    3.436    0.135
+  262 (pi0)        11     111  137   -0.145   -0.064   -2.372    2.381    0.135
+  263 (pi0)        11     111  137   -0.290   -0.002   -6.083    6.091    0.135
+  264 pi+           1     211  140    0.741    0.496   -5.559    5.632    0.140
+  265 pi-           1    -211  140   -0.009    0.127   -1.532    1.544    0.140
+  266 pi+           1     211  142   -0.151   -0.101   -0.640    0.680    0.140
+  267 pi-           1    -211  142    0.292   -0.201   -1.282    1.337    0.140
+  268 (pi0)        11     111  142   -0.078   -0.218   -0.331    0.426    0.135
+  269 gamma         1      22  144   -0.421   -0.081   -5.557    5.574    0.000
+  270 gamma         1      22  144   -0.458   -0.183   -5.107    5.131    0.000
+  271 pi+           1     211  145    0.033    0.083  -66.093   66.094    0.140
+  272 (pi0)        11     111  145   -0.697    0.343  -81.639   81.643    0.135
+  273 pi-           1    -211  147   -0.387    0.010  -44.426   44.427    0.140
+  274 (pi0)        11     111  147    0.171   -0.149   -7.261    7.266    0.135
+  275 pi-           1    -211  149   -0.096    0.408   -3.246    3.276    0.140
+  276 pi+           1     211  149    0.074   -0.086   -4.441    4.444    0.140
+  277 gamma         1      22  150   -0.043    0.091   -0.882    0.888    0.000
+  278 pi+           1     211  150   -0.140    0.117   -3.605    3.613    0.140
+  279 pi-           1    -211  150   -0.278   -0.195   -6.341    6.351    0.140
+  280 pi+           1     211  151    0.150   -0.063   -0.914    0.939    0.140
+  281 pi-           1    -211  151    0.562   -0.044  -15.608   15.619    0.140
+  282 pi+           1     211  152   -0.008   -0.471   -4.624    4.650    0.140
+  283 (pi0)        11     111  152   -0.206    0.489   -6.346    6.370    0.135
+  284 pi+           1     211  153    0.058   -0.014   -0.249    0.291    0.140
+  285 pi-           1    -211  153   -0.002   -0.178   -2.524    2.534    0.140
+  286 gamma         1      22  154    0.368   -0.164   -0.255    0.477    0.000
+  287 gamma         1      22  154    0.185    0.012   -0.091    0.206    0.000
+  288 pi-           1    -211  155   -0.900   -0.064   -0.412    1.002    0.140
+  289 (pi0)        11     111  155    0.195    0.069   -0.413    0.481    0.135
+  290 (pi0)        11     111  156   -0.111    0.010    0.094    0.199    0.135
+  291 (pi0)        11     111  156   -0.199    0.200   -0.059    0.318    0.135
+  292 (pi0)        11     111  156   -0.252    0.171    0.192    0.385    0.135
+  293 pi+           1     211  157    0.493   -0.099   -0.109    0.533    0.140
+  294 (pi0)        11     111  157   -0.277    0.008    0.262    0.404    0.135
+  295 gamma         1      22  158   -0.032    0.366    0.192    0.414    0.000
+  296 gamma         1      22  158    0.058    0.190    0.036    0.202    0.000
+  297 pi-           1    -211  160   -0.072   -0.246   -0.226    0.369    0.140
+  298 pi+           1     211  160   -0.452   -0.210    0.066    0.522    0.140
+  299 (pi0)        11     111  160   -0.012   -0.008   -0.156    0.207    0.135
+  300 gamma         1      22  162    0.260   -0.272   -0.187    0.420    0.000
+  301 gamma         1      22  162    0.062   -0.157   -0.161    0.233    0.000
+  302 pi-           1    -211  163    0.812    0.246   -5.931    5.993    0.140
+  303 (pi0)        11     111  163    0.191    0.201   -0.641    0.712    0.135
+  304 Lambdabar0    1   -3122  164   -0.504   -0.608  -11.937   12.015    1.116
+  305 (pi0)        11     111  164   -0.020    0.083   -3.185    3.189    0.135
+  306 Lambda0       1    3122  165    1.084   -0.024  -34.375   34.411    1.116
+  307 pi+           1     211  165    0.577    0.019  -10.256   10.273    0.140
+  308 gamma         1      22  169    4.080    2.911    0.790    5.073    0.000
+  309 gamma         1      22  169    5.947    4.321    1.005    7.420    0.000
+  310 gamma         1      22  171    0.565    0.934   -0.029    1.092    0.000
+  311 e-            1      11  171    0.286    0.390    0.061    0.487    0.001
+  312 e+            1     -11  171    0.030    0.040    0.006    0.050    0.001
+  313 gamma         1      22  173    0.915   -0.069    0.486    1.038    0.000
+  314 gamma         1      22  173    0.322    0.017    0.097    0.337    0.000
+  315 gamma         1      22  174    0.145    0.061    0.142    0.212    0.000
+  316 gamma         1      22  174    0.273    0.085    0.055    0.292    0.000
+  317 gamma         1      22  175    0.066    0.016   -0.025    0.072    0.000
+  318 gamma         1      22  175   -0.027    0.004    0.072    0.077    0.000
+  319 gamma         1      22  176    0.153    0.045    0.072    0.175    0.000
+  320 gamma         1      22  176    0.200   -0.045   -0.022    0.206    0.000
+  321 K_S0          1     310  185   -0.763   -1.775    0.562    2.073    0.498
+  322 gamma         1      22  186   -0.071   -0.046   -0.020    0.087    0.000
+  323 gamma         1      22  186    0.045    0.012   -0.060    0.076    0.000
+  324 gamma         1      22  190   -0.137   -0.638    0.061    0.655    0.000
+  325 gamma         1      22  190    0.025   -0.278    0.055    0.284    0.000
+  326 gamma         1      22  192    0.219   -0.758    0.236    0.824    0.000
+  327 gamma         1      22  192    0.533   -2.139    0.444    2.249    0.000
+  328 gamma         1      22  197   -0.005   -0.272    0.066    0.280    0.000
+  329 gamma         1      22  197    0.316   -2.454    0.417    2.509    0.000
+  330 K_L0          1     130  202   -0.159   -0.374    5.184    5.224    0.498
+  331 gamma         1      22  208    0.064   -0.080    0.052    0.115    0.000
+  332 gamma         1      22  208    0.098   -0.030    0.243    0.264    0.000
+  333 K_S0          1     310  209    0.188    0.077    0.538    0.761    0.498
+  334 gamma         1      22  210   -0.027   -0.054    0.224    0.232    0.000
+  335 gamma         1      22  210    0.118   -0.062    0.850    0.860    0.000
+  336 gamma         1      22  213   -0.063   -0.045   -0.035    0.085    0.000
+  337 gamma         1      22  213   -0.027    0.003    0.086    0.090    0.000
+  338 gamma         1      22  216   -0.090   -0.164    0.478    0.514    0.000
+  339 pi+           1     211  216    0.112   -0.053    0.120    0.222    0.140
+  340 pi-           1    -211  216    0.026   -0.230    0.235    0.358    0.140
+  341 pi+           1     211  220   -0.363    0.186    0.523    0.678    0.140
+  342 pi-           1    -211  220   -0.625   -0.659    0.515    1.053    0.140
+  343 gamma         1      22  222   -0.248    0.044    0.195    0.319    0.000
+  344 gamma         1      22  222   -0.275   -0.072    0.132    0.313    0.000
+  345 pi+           1     211  224   -0.237   -0.124    1.462    1.493    0.140
+  346 pi-           1    -211  224   -0.053   -0.075    3.687    3.691    0.140
+  347 (pi0)        11     111  224    0.024    0.192    1.838    1.853    0.135
+  348 gamma         1      22  230   -0.262   -0.243    1.071    1.129    0.000
+  349 gamma         1      22  230   -0.141   -0.104    0.900    0.917    0.000
+  350 gamma         1      22  232   -0.002    0.004    0.005    0.007    0.000
+  351 gamma         1      22  232   -0.366   -0.042    5.096    5.110    0.000
+  352 gamma         1      22  234    0.141   -0.113    0.379    0.420    0.000
+  353 gamma         1      22  234    0.082    0.020    0.346    0.356    0.000
+  354 gamma         1      22  237    0.015   -0.037    0.000    0.040    0.000
+  355 gamma         1      22  237    0.294   -0.045    0.240    0.382    0.000
+  356 gamma         1      22  239   -0.022   -0.076    0.029    0.084    0.000
+  357 e-            1      11  239    0.008    0.020   -0.026    0.033    0.001
+  358 e+            1     -11  239    0.010    0.014   -0.018    0.025    0.001
+  359 gamma         1      22  242   -0.073   -0.026   -0.027    0.082    0.000
+  360 gamma         1      22  242   -0.033   -0.182   -0.179    0.257    0.000
+  361 gamma         1      22  247   -0.097   -0.062   -0.079    0.139    0.000
+  362 gamma         1      22  247    0.023   -0.055    0.020    0.063    0.000
+  363 K_L0          1     130  248    0.240    0.063   -1.601    1.695    0.498
+  364 gamma         1      22  253   -0.004    0.057   -1.298    1.299    0.000
+  365 gamma         1      22  253   -0.220    0.090   -3.435    3.444    0.000
+  366 gamma         1      22  256   -0.258   -0.156  -26.967   26.969    0.000
+  367 gamma         1      22  256   -0.077    0.018   -4.606    4.607    0.000
+  368 gamma         1      22  260    0.203    0.201  -40.284   40.285    0.000
+  369 (pi0)        11     111  260   -0.605    0.322  -51.667   51.671    0.135
+  370 gamma         1      22  261   -0.116    0.124   -2.507    2.513    0.000
+  371 gamma         1      22  261   -0.123    0.032   -0.914    0.923    0.000
+  372 gamma         1      22  262   -0.091   -0.027   -0.563    0.571    0.000
+  373 gamma         1      22  262   -0.054   -0.037   -1.809    1.810    0.000
+  374 gamma         1      22  263   -0.295    0.009   -5.200    5.208    0.000
+  375 gamma         1      22  263    0.004   -0.011   -0.883    0.883    0.000
+  376 gamma         1      22  268   -0.004   -0.039   -0.169    0.173    0.000
+  377 gamma         1      22  268   -0.074   -0.179   -0.163    0.253    0.000
+  378 gamma         1      22  272    0.002   -0.007   -0.870    0.870    0.000
+  379 gamma         1      22  272   -0.699    0.350  -80.769   80.773    0.000
+  380 gamma         1      22  274    0.143   -0.073   -6.030    6.032    0.000
+  381 gamma         1      22  274    0.028   -0.076   -1.232    1.234    0.000
+  382 gamma         1      22  283   -0.039    0.198   -1.826    1.837    0.000
+  383 gamma         1      22  283   -0.167    0.290   -4.520    4.533    0.000
+  384 gamma         1      22  289    0.178    0.008   -0.346    0.389    0.000
+  385 gamma         1      22  289    0.016    0.060   -0.067    0.092    0.000
+  386 gamma         1      22  290   -0.028    0.068    0.048    0.088    0.000
+  387 gamma         1      22  290   -0.083   -0.058    0.046    0.111    0.000
+  388 gamma         1      22  291   -0.119    0.196   -0.063    0.237    0.000
+  389 gamma         1      22  291   -0.080    0.004    0.004    0.080    0.000
+  390 gamma         1      22  292   -0.062    0.058   -0.009    0.086    0.000
+  391 gamma         1      22  292   -0.190    0.113    0.202    0.299    0.000
+  392 gamma         1      22  294   -0.204   -0.037    0.122    0.241    0.000
+  393 gamma         1      22  294   -0.072    0.044    0.140    0.164    0.000
+  394 gamma         1      22  299   -0.012    0.049   -0.138    0.147    0.000
+  395 gamma         1      22  299    0.000   -0.057   -0.018    0.060    0.000
+  396 gamma         1      22  303    0.027   -0.003   -0.011    0.029    0.000
+  397 gamma         1      22  303    0.164    0.204   -0.630    0.682    0.000
+  398 gamma         1      22  305    0.044    0.085   -1.804    1.807    0.000
+  399 gamma         1      22  305   -0.064   -0.002   -1.381    1.383    0.000
+  400 gamma         1      22  347    0.031   -0.006    0.138    0.142    0.000
+  401 gamma         1      22  347   -0.008    0.198    1.700    1.711    0.000
+  402 gamma         1      22  369   -0.515    0.214  -40.826   40.829    0.000
+  403 gamma         1      22  369   -0.090    0.108  -10.841   10.842    0.000
+ ==============================================================================
+                   sum:  0.00         0.000    0.000    0.000 1960.000 196GenInputManager Begin processing 4th record. Run 151435, Trigger 3
+GenInputManager Begin processing 5th record. Run 151435, Trigger 4
+GenInputManager Begin processing 6th record. Run 151435, Trigger 5
+GenInputManager Begin processing 7th record. Run 151435, Trigger 6
+GenInputManager Begin processing 8th record. Run 151435, Trigger 7
+GenInputManager Begin processing 9th record. Run 151435, Trigger 8
+GenInputManager Begin processing 10th record. Run 151435, Trigger 9
+0.000
+EvtGenFinding B Mesons and about to enter DecayAll
+ ********************************************************************************
+ *                                                                              *
+ * PHOTOS: Available Phase Space below Cut-off:        0.005590 GeV/c^2         *
+ *                                                                              *
+ ********************************************************************************
+EvtGen:Will initialize JetSet.
+EvtGen:JetSet (lucomp) does not know the particle:chi_b1(3P)
+EvtGen:Therfore the decay:
+EvtGen:chi_b1(3P) -> g g 
+EvtGen:Will not be generated.
+EvtGen:JetSet (lucomp) does not know the particle:chi_b2(3P)
+EvtGen:Therfore the decay:
+EvtGen:chi_b2(3P) -> g g 
+EvtGen:Will not be generated.
+EvtGen:JetSet (lucomp) does not know the particle:Upsilon_2(2D)
+EvtGen:Therfore the decay:
+EvtGen:Upsilon_2(2D) -> g g g 
+EvtGen:Will not be generated.
+EvtGen:JetSet (lucomp) does not know the particle:Upsilon_3(2D)
+EvtGen:Therfore the decay:
+EvtGen:Upsilon_3(2D) -> g g g 
+EvtGen:Will not be generated.
+EvtGen:JetSet (lucomp) does not know the particle:h_b(3P)
+EvtGen:Therfore the decay:
+EvtGen:h_b(3P) -> g g 
+EvtGen:Will not be generated.
+1                                                                              
+ ******************************************************************************
+ ******************************************************************************
+ **                                                                          **
+ **                                                                          **
+ **  PPP  Y   Y TTTTT H   H III   A        JJJJ EEEE TTTTT  SSS  EEEE TTTTT  **
+ **  P  P  Y Y    T   H   H  I   A A          J E      T   S     E      T    **
+ **  PPP    Y     T   HHHHH  I  AAAAA         J EEE    T    SSS  EEE    T    **
+ **  P      Y     T   H   H  I  A   A      J  J E      T       S E      T    **
+ **  P      Y     T   H   H III A   A       JJ  EEEE   T    SSS  EEEE   T    **
+ **                                                                          **
+ **                                                                          **
+ **              *......*                  Welcome to the Lund Monte Carlo!  **
+ **         *:::!!:::::::::::*                                               **
+ **      *::::::!!::::::::::::::*           Warning: this is jetset7.4_fkw   **
+ **    *::::::::!!::::::::::::::::*        All refs to pythia were excised!  **
+ **   *:::::::::!!:::::::::::::::::*               PYTHIA !!!                **
+ **   *:::::::::!!:::::::::::::::::*        it was altered by fkw   7.410    **
+ **    *::::::::!!::::::::::::::::*!        on 3.29.00          20 Jan 1997  **
+ **      *::::::!!::::::::::::::* !!        to this effect !!!               **
+ **      !! *:::!!:::::::::::*    !!                 Main author:            **
+ **      !!     !* -><- *         !!              Torbjorn Sjostrand         **
+ **      !!     !!                !!        Dept. of theoretical physics 2   **
+ **      !!     !!                !!              University of Lund         **
+ **      !!                       !!                Solvegatan 14A           **
+ **      !!        ep             !!             S-223 62 Lund, Sweden       **
+ **      !!                       !!          phone: +46 - 46 - 222 48 16    **
+ **      !!                 pp    !!          E-mail: torbjorn@thep.lu.se    **
+ **      !!   e+e-                !!                                         **
+ **      !!                       !!         Copyright Torbjorn Sjostrand    **
+ **      !!                                     and CERN, Geneva 1993        **
+ **                                                                          **
+ **                                                                          **
+ ** The latest program versions and documentation is found on WWW address    **
+ ** http://thep.lu.se/tf2/staff/torbjorn/Welcome.html                        **
+ **                                      This is fkw version !!!             **
+ ** When you cite these programs, priority should always be given to the     **
+ ** latest published description. Currently this is                          **
+ ** T. Sjostrand, Computer Physics Commun. 82 (1994) 74.                     **
+ ** The most recent long description (unpublished) is                        **
+ ** T. Sjostrand, LU TP 95-20 and CERN-TH.7112/93 (revised August 1995).     **
+ ** Also remember that the programs, to a large extent, represent original   **
+ ** physics research. Other publications of special relevance to your        **
+ ** studies may therefore deserve separate mention.                          **
+ **                                                                          **
+ **                                                                          **
+ ******************************************************************************
+ ******************************************************************************
+
+ Warning: Jetset7.4_fkw independent of PYTHIA!
+
+     MSTJ(104)      changed from              5 to              5
+     MSTJ(107)      changed from              0 to              1
+     MSTJ(11)       changed from              4 to              4
+     PARJ(41)       changed from        0.30000 to        0.30000
+     PARJ(42)       changed from        0.58000 to        0.58000
+     PARJ(43)       changed from        0.50000 to        0.50000
+     PARJ(44)       changed from        0.90000 to        0.90000
+     PARJ(54)       changed from       -0.05000 to       -0.04000
+     PARJ(55)       changed from       -0.00500 to       -0.00400
+     MSTJ(26)       changed from              2 to              0
+     PARJ(13)       changed from        0.75000 to        0.40000
+     PARJ(26)       changed from        0.40000 to        0.10000
+     PARJ(25)       changed from        1.00000 to        0.60000
+     PARJ(2)        changed from        0.30000 to        0.26000
+     PARJ(12)       changed from        0.60000 to        0.55000
+     PARJ(11)       changed from        0.50000 to        0.40000
+     PARJ(1)        changed from        0.10000 to        0.06500
+     PARJ(14)       changed from        0.00000 to        0.05000
+     PARJ(15)       changed from        0.00000 to        0.05000
+     PARJ(16)       changed from        0.00000 to        0.05000
+     PARJ(17)       changed from        0.00000 to        0.05000
+     PARJ(33)       changed from        0.80000 to        0.30000
+EvtGen:Done initializing JetSet.
+GenInputManager Begin processing 11th record. Run 151435, Trigger 10
+GenInputManager Begin processing 12th record. Run 151435, Trigger 11
+GenInputManager Begin processing 13th record. Run 151435, Trigger 12
+GenInputManager Begin processing 14th record. Run 151435, Trigger 13
+GenInputManager Begin processing 15th record. Run 151435, Trigger 14
+GenInputManager Begin processing 16th record. Run 151435, Trigger 15
+GenInputManager Begin processing 17th record. Run 151435, Trigger 16
+GenInputManager Begin processing 18th record. Run 151435, Trigger 17
+GenInputManager Begin processing 19th record. Run 151435, Trigger 18
+GenInputManager Begin processing 20th record. Run 151435, Trigger 19
+GenInputManager Begin processing 21th record. Run 151435, Trigger 20
+GenInputManager Begin processing 22th record. Run 151435, Trigger 21
+GenInputManager Begin processing 23th record. Run 151435, Trigger 22
+GenInputManager Begin processing 24th record. Run 151435, Trigger 23
+GenInputManager Begin processing 25th record. Run 151435, Trigger 24
+GenInputManager Begin processing 26th record. Run 151435, Trigger 25
+GenInputManager Begin processing 27th record. Run 151435, Trigger 26
+GenInputManager Begin processing 28th record. Run 151435, Trigger 27
+GenInputManager Begin processing 29th record. Run 151435, Trigger 28
+GenInputManager Begin processing 30th record. Run 151435, Trigger 29
+GenInputManager Begin processing 31th record. Run 151435, Trigger 30
+GenInputManager Begin processing 32th record. Run 151435, Trigger 31
+GenInputManager Begin processing 33th record. Run 151435, Trigger 32
+GenInputManager Begin processing 34th record. Run 151435, Trigger 33
+GenInputManager Begin processing 35th record. Run 151435, Trigger 34
+GenInputManager Begin processing 36th record. Run 151435, Trigger 35
+GenInputManager Begin processing 37th record. Run 151435, Trigger 36
+GenInputManager Begin processing 38th record. Run 151435, Trigger 37
+GenInputManager Begin processing 39th record. Run 151435, Trigger 38
+GenInputManager Begin processing 40th record. Run 151435, Trigger 39
+GenInputManager Begin processing 41th record. Run 151435, Trigger 40
+GenInputManager Begin processing 42th record. Run 151435, Trigger 41
+GenInputManager Begin processing 43th record. Run 151435, Trigger 42
+GenInputManager Begin processing 44th record. Run 151435, Trigger 43
+GenInputManager Begin processing 45th record. Run 151435, Trigger 44
+GenInputManager Begin processing 46th record. Run 151435, Trigger 45
+GenInputManager Begin processing 47th record. Run 151435, Trigger 46
+GenInputManager Begin processing 48th record. Run 151435, Trigger 47
+GenInputManager Begin processing 49th record. Run 151435, Trigger 48
+GenInputManager Begin processing 50th record. Run 151435, Trigger 49
+GenInputManager Begin processing 51th record. Run 151435, Trigger 50
+GenInputManager Begin processing 52th record. Run 151435, Trigger 51
+GenInputManager Begin processing 53th record. Run 151435, Trigger 52
+GenInputManager Begin processing 54th record. Run 151435, Trigger 53
+GenInputManager Begin processing 55th record. Run 151435, Trigger 54
+GenInputManager Begin processing 56th record. Run 151435, Trigger 55
+GenInputManager Begin processing 57th record. Run 151435, Trigger 56
+GenInputManager Begin processing 58th record. Run 151435, Trigger 57
+GenInputManager Begin processing 59th record. Run 151435, Trigger 58
+GenInputManager Begin processing 60th record. Run 151435, Trigger 59
+GenInputManager Begin processing 61th record. Run 151435, Trigger 60
+GenInputManager Begin processing 62th record. Run 151435, Trigger 61
+GenInputManager Begin processing 63th record. Run 151435, Trigger 62
+GenInputManager Begin processing 64th record. Run 151435, Trigger 63
+GenInputManager Begin processing 65th record. Run 151435, Trigger 64
+GenInputManager Begin processing 66th record. Run 151435, Trigger 65
+GenInputManager Begin processing 67th record. Run 151435, Trigger 66
+GenInputManager Begin processing 68th record. Run 151435, Trigger 67
+GenInputManager Begin processing 69th record. Run 151435, Trigger 68
+GenInputManager Begin processing 70th record. Run 151435, Trigger 69
+GenInputManager Begin processing 71th record. Run 151435, Trigger 70
+GenInputManager Begin processing 72th record. Run 151435, Trigger 71
+GenInputManager Begin processing 73th record. Run 151435, Trigger 72
+GenInputManager Begin processing 74th record. Run 151435, Trigger 73
+GenInputManager Begin processing 75th record. Run 151435, Trigger 74
+GenInputManager Begin processing 76th record. Run 151435, Trigger 75
+GenInputManager Begin processing 77th record. Run 151435, Trigger 76
+GenInputManager Begin processing 78th record. Run 151435, Trigger 77
+GenInputManager Begin processing 79th record. Run 151435, Trigger 78
+GenInputManager Begin processing 80th record. Run 151435, Trigger 79
+GenInputManager Begin processing 81th record. Run 151435, Trigger 80
+GenInputManager Begin processing 82th record. Run 151435, Trigger 81
+GenInputManager Begin processing 83th record. Run 151435, Trigger 82
+GenInputManager Begin processing 84th record. Run 151435, Trigger 83
+GenInputManager Begin processing 85th record. Run 151435, Trigger 84
+GenInputManager Begin processing 86th record. Run 151435, Trigger 85
+GenInputManager Begin processing 87th record. Run 151435, Trigger 86
+GenInputManager Begin processing 88th record. Run 151435, Trigger 87
+GenInputManager Begin processing 89th record. Run 151435, Trigger 88
+GenInputManager Begin processing 90th record. Run 151435, Trigger 89
+GenInputManager Begin processing 91th record. Run 151435, Trigger 90
+GenInputManager Begin processing 92th record. Run 151435, Trigger 91
+GenInputManager Begin processing 93th record. Run 151435, Trigger 92
+GenInputManager Begin processing 94th record. Run 151435, Trigger 93
+GenInputManager Begin processing 95th record. Run 151435, Trigger 94
+GenInputManager Begin processing 96th record. Run 151435, Trigger 95
+GenInputManager Begin processing 97th record. Run 151435, Trigger 96
+GenInputManager Begin processing 98th record. Run 151435, Trigger 97
+GenInputManager Begin processing 99th record. Run 151435, Trigger 98
+GenInputManager Begin processing 100th record. Run 151435, Trigger 99
+GenInputManager Begin processing 101th record. Run 151435, Trigger 100
+GenInputManager Begin processing 102th record. Run 151435, Trigger 101
+GenInputManager Begin processing 103th record. Run 151435, Trigger 102
+GenInputManager Begin processing 104th record. Run 151435, Trigger 103
+GenInputManager Begin processing 105th record. Run 151435, Trigger 104
+GenInputManager Begin processing 106th record. Run 151435, Trigger 105
+GenInputManager Begin processing 107th record. Run 151435, Trigger 106
+GenInputManager Begin processing 108th record. Run 151435, Trigger 107
+GenInputManager Begin processing 109th record. Run 151435, Trigger 108
+GenInputManager Begin processing 110th record. Run 151435, Trigger 109
+GenInputManager Begin processing 111th record. Run 151435, Trigger 110
+GenInputManager Begin processing 112th record. Run 151435, Trigger 111
+GenInputManager Begin processing 113th record. Run 151435, Trigger 112
+GenInputManager Begin processing 114th record. Run 151435, Trigger 113
+GenInputManager Begin processing 115th record. Run 151435, Trigger 114
+GenInputManager Begin processing 116th record. Run 151435, Trigger 115
+GenInputManager Begin processing 117th record. Run 151435, Trigger 116
+GenInputManager Begin processing 118th record. Run 151435, Trigger 117
+GenInputManager Begin processing 119th record. Run 151435, Trigger 118
+GenInputManager Begin processing 120th record. Run 151435, Trigger 119
+GenInputManager Begin processing 121th record. Run 151435, Trigger 120
+GenInputManager Begin processing 122th record. Run 151435, Trigger 121
+GenInputManager Begin processing 123th record. Run 151435, Trigger 122
+GenInputManager Begin processing 124th record. Run 151435, Trigger 123
+GenInputManager Begin processing 125th record. Run 151435, Trigger 124
+GenInputManager Begin processing 126th record. Run 151435, Trigger 125
+GenInputManager Begin processing 127th record. Run 151435, Trigger 126
+GenInputManager Begin processing 128th record. Run 151435, Trigger 127
+GenInputManager Begin processing 129th record. Run 151435, Trigger 128
+GenInputManager Begin processing 130th record. Run 151435, Trigger 129
+GenInputManager Begin processing 131th record. Run 151435, Trigger 130
+GenInputManager Begin processing 132th record. Run 151435, Trigger 131
+GenInputManager Begin processing 133th record. Run 151435, Trigger 132
+GenInputManager Begin processing 134th record. Run 151435, Trigger 133
+GenInputManager Begin processing 135th record. Run 151435, Trigger 134
+GenInputManager Begin processing 136th record. Run 151435, Trigger 135
+GenInputManager Begin processing 137th record. Run 151435, Trigger 136
+GenInputManager Begin processing 138th record. Run 151435, Trigger 137
+GenInputManager Begin processing 139th record. Run 151435, Trigger 138
+GenInputManager Begin processing 140th record. Run 151435, Trigger 139
+GenInputManager Begin processing 141th record. Run 151435, Trigger 140
+GenInputManager Begin processing 142th record. Run 151435, Trigger 141
+GenInputManager Begin processing 143th record. Run 151435, Trigger 142
+GenInputManager Begin processing 144th record. Run 151435, Trigger 143
+GenInputManager Begin processing 145th record. Run 151435, Trigger 144
+GenInputManager Begin processing 146th record. Run 151435, Trigger 145
+GenInputManager Begin processing 147th record. Run 151435, Trigger 146
+GenInputManager Begin processing 148th record. Run 151435, Trigger 147
+GenInputManager Begin processing 149th record. Run 151435, Trigger 148
+GenInputManager Begin processing 150th record. Run 151435, Trigger 149
+GenInputManager Begin processing 151th record. Run 151435, Trigger 150
+GenInputManager Begin processing 152th record. Run 151435, Trigger 151
+GenInputManager Begin processing 153th record. Run 151435, Trigger 152
+GenInputManager Begin processing 154th record. Run 151435, Trigger 153
+GenInputManager Begin processing 155th record. Run 151435, Trigger 154
+GenInputManager Begin processing 156th record. Run 151435, Trigger 155
+GenInputManager Begin processing 157th record. Run 151435, Trigger 156
+GenInputManager Begin processing 158th record. Run 151435, Trigger 157
+GenInputManager Begin processing 159th record. Run 151435, Trigger 158
+GenInputManager Begin processing 160th record. Run 151435, Trigger 159
+GenInputManager Begin processing 161th record. Run 151435, Trigger 160
+GenInputManager Begin processing 162th record. Run 151435, Trigger 161
+GenInputManager Begin processing 163th record. Run 151435, Trigger 162
+GenInputManager Begin processing 164th record. Run 151435, Trigger 163
+GenInputManager Begin processing 165th record. Run 151435, Trigger 164
+GenInputManager Begin processing 166th record. Run 151435, Trigger 165
+GenInputManager Begin processing 167th record. Run 151435, Trigger 166
+GenInputManager Begin processing 168th record. Run 151435, Trigger 167
+GenInputManager Begin processing 169th record. Run 151435, Trigger 168
+GenInputManager Begin processing 170th record. Run 151435, Trigger 169
+GenInputManager Begin processing 171th record. Run 151435, Trigger 170
+GenInputManager Begin processing 172th record. Run 151435, Trigger 171
+GenInputManager Begin processing 173th record. Run 151435, Trigger 172
+GenInputManager Begin processing 174th record. Run 151435, Trigger 173
+GenInputManager Begin processing 175th record. Run 151435, Trigger 174
+GenInputManager Begin processing 176th record. Run 151435, Trigger 175
+GenInputManager Begin processing 177th record. Run 151435, Trigger 176
+GenInputManager Begin processing 178th record. Run 151435, Trigger 177
+GenInputManager Begin processing 179th record. Run 151435, Trigger 178
+GenInputManager Begin processing 180th record. Run 151435, Trigger 179
+GenInputManager Begin processing 181th record. Run 151435, Trigger 180
+GenInputManager Begin processing 182th record. Run 151435, Trigger 181
+GenInputManager Begin processing 183th record. Run 151435, Trigger 182
+GenInputManager Begin processing 184th record. Run 151435, Trigger 183
+GenInputManager Begin processing 185th record. Run 151435, Trigger 184
+GenInputManager Begin processing 186th record. Run 151435, Trigger 185
+GenInputManager Begin processing 187th record. Run 151435, Trigger 186
+GenInputManager Begin processing 188th record. Run 151435, Trigger 187
+GenInputManager Begin processing 189th record. Run 151435, Trigger 188
+GenInputManager Begin processing 190th record. Run 151435, Trigger 189
+GenInputManager Begin processing 191th record. Run 151435, Trigger 190
+GenInputManager Begin processing 192th record. Run 151435, Trigger 191
+GenInputManager Begin processing 193th record. Run 151435, Trigger 192
+GenInputManager Begin processing 194th record. Run 151435, Trigger 193
+GenInputManager Begin processing 195th record. Run 151435, Trigger 194
+GenInputManager Begin processing 196th record. Run 151435, Trigger 195
+GenInputManager Begin processing 197th record. Run 151435, Trigger 196
+GenInputManager Begin processing 198th record. Run 151435, Trigger 197
+GenInputManager Begin processing 199th record. Run 151435, Trigger 198
+GenInputManager Begin processing 200th record. Run 151435, Trigger 199
+GenInputManager Begin processing 201th record. Run 151435, Trigger 200
+GenInputManager Begin processing 202th record. Run 151435, Trigger 201
+GenInputManager Begin processing 203th record. Run 151435, Trigger 202
+GenInputManager Begin processing 204th record. Run 151435, Trigger 203
+GenInputManager Begin processing 205th record. Run 151435, Trigger 204
+GenInputManager Begin processing 206th record. Run 151435, Trigger 205
+GenInputManager Begin processing 207th record. Run 151435, Trigger 206
+GenInputManager Begin processing 208th record. Run 151435, Trigger 207
+GenInputManager Begin processing 209th record. Run 151435, Trigger 208
+GenInputManager Begin processing 210th record. Run 151435, Trigger 209
+GenInputManager Begin processing 211th record. Run 151435, Trigger 210
+GenInputManager Begin processing 212th record. Run 151435, Trigger 211
+GenInputManager Begin processing 213th record. Run 151435, Trigger 212
+GenInputManager Begin processing 214th record. Run 151435, Trigger 213
+GenInputManager Begin processing 215th record. Run 151435, Trigger 214
+GenInputManager Begin processing 216th record. Run 151435, Trigger 215
+GenInputManager Begin processing 217th record. Run 151435, Trigger 216
+GenInputManager Begin processing 218th record. Run 151435, Trigger 217
+GenInputManager Begin processing 219th record. Run 151435, Trigger 218
+GenInputManager Begin processing 220th record. Run 151435, Trigger 219
+GenInputManager Begin processing 221th record. Run 151435, Trigger 220
+GenInputManager Begin processing 222th record. Run 151435, Trigger 221
+GenInputManager Begin processing 223th record. Run 151435, Trigger 222
+GenInputManager Begin processing 224th record. Run 151435, Trigger 223
+GenInputManager Begin processing 225th record. Run 151435, Trigger 224
+GenInputManager Begin processing 226th record. Run 151435, Trigger 225
+GenInputManager Begin processing 227th record. Run 151435, Trigger 226
+GenInputManager Begin processing 228th record. Run 151435, Trigger 227
+GenInputManager Begin processing 229th record. Run 151435, Trigger 228
+GenInputManager Begin processing 230th record. Run 151435, Trigger 229
+GenInputManager Begin processing 231th record. Run 151435, Trigger 230
+GenInputManager Begin processing 232th record. Run 151435, Trigger 231
+GenInputManager Begin processing 233th record. Run 151435, Trigger 232
+GenInputManager Begin processing 234th record. Run 151435, Trigger 233
+GenInputManager Begin processing 235th record. Run 151435, Trigger 234
+GenInputManager Begin processing 236th record. Run 151435, Trigger 235
+GenInputManager Begin processing 237th record. Run 151435, Trigger 236
+GenInputManager Begin processing 238th record. Run 151435, Trigger 237
+GenInputManager Begin processing 239th record. Run 151435, Trigger 238
+GenInputManager Begin processing 240th record. Run 151435, Trigger 239
+GenInputManager Begin processing 241th record. Run 151435, Trigger 240
+GenInputManager Begin processing 242th record. Run 151435, Trigger 241
+GenInputManager Begin processing 243th record. Run 151435, Trigger 242
+GenInputManager Begin processing 244th record. Run 151435, Trigger 243
+GenInputManager Begin processing 245th record. Run 151435, Trigger 244
+GenInputManager Begin processing 246th record. Run 151435, Trigger 245
+GenInputManager Begin processing 247th record. Run 151435, Trigger 246
+GenInputManager Begin processing 248th record. Run 151435, Trigger 247
+GenInputManager Begin processing 249th record. Run 151435, Trigger 248
+GenInputManager Begin processing 250th record. Run 151435, Trigger 249
+GenInputManager Begin processing 251th record. Run 151435, Trigger 250
+GenInputManager Begin processing 252th record. Run 151435, Trigger 251
+GenInputManager Begin processing 253th record. Run 151435, Trigger 252
+GenInputManager Begin processing 254th record. Run 151435, Trigger 253
+GenInputManager Begin processing 255th record. Run 151435, Trigger 254
+GenInputManager Begin processing 256th record. Run 151435, Trigger 255
+GenInputManager Begin processing 257th record. Run 151435, Trigger 256
+GenInputManager Begin processing 258th record. Run 151435, Trigger 257
+GenInputManager Begin processing 259th record. Run 151435, Trigger 258
+GenInputManager Begin processing 260th record. Run 151435, Trigger 259
+GenInputManager Begin processing 261th record. Run 151435, Trigger 260
+GenInputManager Begin processing 262th record. Run 151435, Trigger 261
+GenInputManager Begin processing 263th record. Run 151435, Trigger 262
+GenInputManager Begin processing 264th record. Run 151435, Trigger 263
+GenInputManager Begin processing 265th record. Run 151435, Trigger 264
+GenInputManager Begin processing 266th record. Run 151435, Trigger 265
+GenInputManager Begin processing 267th record. Run 151435, Trigger 266
+GenInputManager Begin processing 268th record. Run 151435, Trigger 267
+GenInputManager Begin processing 269th record. Run 151435, Trigger 268
+GenInputManager Begin processing 270th record. Run 151435, Trigger 269
+GenInputManager Begin processing 271th record. Run 151435, Trigger 270
+GenInputManager Begin processing 272th record. Run 151435, Trigger 271
+GenInputManager Begin processing 273th record. Run 151435, Trigger 272
+GenInputManager Begin processing 274th record. Run 151435, Trigger 273
+GenInputManager Begin processing 275th record. Run 151435, Trigger 274
+GenInputManager Begin processing 276th record. Run 151435, Trigger 275
+GenInputManager Begin processing 277th record. Run 151435, Trigger 276
+GenInputManager Begin processing 278th record. Run 151435, Trigger 277
+GenInputManager Begin processing 279th record. Run 151435, Trigger 278
+GenInputManager Begin processing 280th record. Run 151435, Trigger 279
+GenInputManager Begin processing 281th record. Run 151435, Trigger 280
+GenInputManager Begin processing 282th record. Run 151435, Trigger 281
+GenInputManager Begin processing 283th record. Run 151435, Trigger 282
+GenInputManager Begin processing 284th record. Run 151435, Trigger 283
+GenInputManager Begin processing 285th record. Run 151435, Trigger 284
+GenInputManager Begin processing 286th record. Run 151435, Trigger 285
+GenInputManager Begin processing 287th record. Run 151435, Trigger 286
+GenInputManager Begin processing 288th record. Run 151435, Trigger 287
+GenInputManager Begin processing 289th record. Run 151435, Trigger 288
+GenInputManager Begin processing 290th record. Run 151435, Trigger 289
+GenInputManager Begin processing 291th record. Run 151435, Trigger 290
+GenInputManager Begin processing 292th record. Run 151435, Trigger 291
+GenInputManager Begin processing 293th record. Run 151435, Trigger 292
+GenInputManager Begin processing 294th record. Run 151435, Trigger 293
+GenInputManager Begin processing 295th record. Run 151435, Trigger 294
+GenInputManager Begin processing 296th record. Run 151435, Trigger 295
+GenInputManager Begin processing 297th record. Run 151435, Trigger 296
+GenInputManager Begin processing 298th record. Run 151435, Trigger 297
+GenInputManager Begin processing 299th record. Run 151435, Trigger 298
+GenInputManager Begin processing 300th record. Run 151435, Trigger 299
+GenInputManager Begin processing 301th record. Run 151435, Trigger 300
+GenInputManager Begin processing 302th record. Run 151435, Trigger 301
+GenInputManager Begin processing 303th record. Run 151435, Trigger 302
+GenInputManager Begin processing 304th record. Run 151435, Trigger 303
+GenInputManager Begin processing 305th record. Run 151435, Trigger 304
+GenInputManager Begin processing 306th record. Run 151435, Trigger 305
+GenInputManager Begin processing 307th record. Run 151435, Trigger 306
+GenInputManager Begin processing 308th record. Run 151435, Trigger 307
+GenInputManager Begin processing 309th record. Run 151435, Trigger 308
+GenInputManager Begin processing 310th record. Run 151435, Trigger 309
+GenInputManager Begin processing 311th record. Run 151435, Trigger 310
+GenInputManager Begin processing 312th record. Run 151435, Trigger 311
+GenInputManager Begin processing 313th record. Run 151435, Trigger 312
+GenInputManager Begin processing 314th record. Run 151435, Trigger 313
+GenInputManager Begin processing 315th record. Run 151435, Trigger 314
+GenInputManager Begin processing 316th record. Run 151435, Trigger 315
+GenInputManager Begin processing 317th record. Run 151435, Trigger 316
+GenInputManager Begin processing 318th record. Run 151435, Trigger 317
+GenInputManager Begin processing 319th record. Run 151435, Trigger 318
+GenInputManager Begin processing 320th record. Run 151435, Trigger 319
+GenInputManager Begin processing 321th record. Run 151435, Trigger 320
+GenInputManager Begin processing 322th record. Run 151435, Trigger 321
+GenInputManager Begin processing 323th record. Run 151435, Trigger 322
+GenInputManager Begin processing 324th record. Run 151435, Trigger 323
+GenInputManager Begin processing 325th record. Run 151435, Trigger 324
+GenInputManager Begin processing 326th record. Run 151435, Trigger 325
+GenInputManager Begin processing 327th record. Run 151435, Trigger 326
+GenInputManager Begin processing 328th record. Run 151435, Trigger 327
+GenInputManager Begin processing 329th record. Run 151435, Trigger 328
+GenInputManager Begin processing 330th record. Run 151435, Trigger 329
+GenInputManager Begin processing 331th record. Run 151435, Trigger 330
+GenInputManager Begin processing 332th record. Run 151435, Trigger 331
+GenInputManager Begin processing 333th record. Run 151435, Trigger 332
+GenInputManager Begin processing 334th record. Run 151435, Trigger 333
+GenInputManager Begin processing 335th record. Run 151435, Trigger 334
+GenInputManager Begin processing 336th record. Run 151435, Trigger 335
+GenInputManager Begin processing 337th record. Run 151435, Trigger 336
+GenInputManager Begin processing 338th record. Run 151435, Trigger 337
+GenInputManager Begin processing 339th record. Run 151435, Trigger 338
+GenInputManager Begin processing 340th record. Run 151435, Trigger 339
+GenInputManager Begin processing 341th record. Run 151435, Trigger 340
+GenInputManager Begin processing 342th record. Run 151435, Trigger 341
+GenInputManager Begin processing 343th record. Run 151435, Trigger 342
+GenInputManager Begin processing 344th record. Run 151435, Trigger 343
+GenInputManager Begin processing 345th record. Run 151435, Trigger 344
+GenInputManager Begin processing 346th record. Run 151435, Trigger 345
+GenInputManager Begin processing 347th record. Run 151435, Trigger 346
+GenInputManager Begin processing 348th record. Run 151435, Trigger 347
+GenInputManager Begin processing 349th record. Run 151435, Trigger 348
+GenInputManager Begin processing 350th record. Run 151435, Trigger 349
+GenInputManager Begin processing 351th record. Run 151435, Trigger 350
+GenInputManager Begin processing 352th record. Run 151435, Trigger 351
+GenInputManager Begin processing 353th record. Run 151435, Trigger 352
+GenInputManager Begin processing 354th record. Run 151435, Trigger 353
+GenInputManager Begin processing 355th record. Run 151435, Trigger 354
+GenInputManager Begin processing 356th record. Run 151435, Trigger 355
+GenInputManager Begin processing 357th record. Run 151435, Trigger 356
+GenInputManager Begin processing 358th record. Run 151435, Trigger 357
+GenInputManager Begin processing 359th record. Run 151435, Trigger 358
+GenInputManager Begin processing 360th record. Run 151435, Trigger 359
+GenInputManager Begin processing 361th record. Run 151435, Trigger 360
+GenInputManager Begin processing 362th record. Run 151435, Trigger 361
+GenInputManager Begin processing 363th record. Run 151435, Trigger 362
+GenInputManager Begin processing 364th record. Run 151435, Trigger 363
+GenInputManager Begin processing 365th record. Run 151435, Trigger 364
+GenInputManager Begin processing 366th record. Run 151435, Trigger 365
+GenInputManager Begin processing 367th record. Run 151435, Trigger 366
+GenInputManager Begin processing 368th record. Run 151435, Trigger 367
+GenInputManager Begin processing 369th record. Run 151435, Trigger 368
+GenInputManager Begin processing 370th record. Run 151435, Trigger 369
+GenInputManager Begin processing 371th record. Run 151435, Trigger 370
+GenInputManager Begin processing 372th record. Run 151435, Trigger 371
+GenInputManager Begin processing 373th record. Run 151435, Trigger 372
+GenInputManager Begin processing 374th record. Run 151435, Trigger 373
+GenInputManager Begin processing 375th record. Run 151435, Trigger 374
+GenInputManager Begin processing 376th record. Run 151435, Trigger 375
+GenInputManager Begin processing 377th record. Run 151435, Trigger 376
+GenInputManager Begin processing 378th record. Run 151435, Trigger 377
+GenInputManager Begin processing 379th record. Run 151435, Trigger 378
+GenInputManager Begin processing 380th record. Run 151435, Trigger 379
+GenInputManager Begin processing 381th record. Run 151435, Trigger 380
+GenInputManager Begin processing 382th record. Run 151435, Trigger 381
+%ERLOG-w CAFE word: ADC response out of range!  GlobalLibraryLogger 
+         AppFileBasedStream::writeEmptyRS() 31-Aug-2011 16:50:11 CDT 
+         run = 151435 event = 381
+%ERLOG-w CAFE word: ADC response out of range!  GlobalLibraryLogger 
+         AppFileBasedStream::writeEmptyRS() 31-Aug-2011 16:50:11 CDT 
+         run = 151435 event = 381
+GenInputManager Begin processing 383th record. Run 151435, Trigger 382
+GenInputManager Begin processing 384th record. Run 151435, Trigger 383
+GenInputManager Begin processing 385th record. Run 151435, Trigger 384
+GenInputManager Begin processing 386th record. Run 151435, Trigger 385
+GenInputManager Begin processing 387th record. Run 151435, Trigger 386
+GenInputManager Begin processing 388th record. Run 151435, Trigger 387
+GenInputManager Begin processing 389th record. Run 151435, Trigger 388
+GenInputManager Begin processing 390th record. Run 151435, Trigger 389
+GenInputManager Begin processing 391th record. Run 151435, Trigger 390
+GenInputManager Begin processing 392th record. Run 151435, Trigger 391
+GenInputManager Begin processing 393th record. Run 151435, Trigger 392
+GenInputManager Begin processing 394th record. Run 151435, Trigger 393
+GenInputManager Begin processing 395th record. Run 151435, Trigger 394
+GenInputManager Begin processing 396th record. Run 151435, Trigger 395
+GenInputManager Begin processing 397th record. Run 151435, Trigger 396
+GenInputManager Begin processing 398th record. Run 151435, Trigger 397
+GenInputManager Begin processing 399th record. Run 151435, Trigger 398
+GenInputManager Begin processing 400th record. Run 151435, Trigger 399
+GenInputManager Begin processing 401th record. Run 151435, Trigger 400
+GenInputManager Begin processing 402th record. Run 151435, Trigger 401
+GenInputManager Begin processing 403th record. Run 151435, Trigger 402
+GenInputManager Begin processing 404th record. Run 151435, Trigger 403
+GenInputManager Begin processing 405th record. Run 151435, Trigger 404
+GenInputManager Begin processing 406th record. Run 151435, Trigger 405
+GenInputManager Begin processing 407th record. Run 151435, Trigger 406
+GenInputManager Begin processing 408th record. Run 151435, Trigger 407
+GenInputManager Begin processing 409th record. Run 151435, Trigger 408
+GenInputManager Begin processing 410th record. Run 151435, Trigger 409
+GenInputManager Begin processing 411th record. Run 151435, Trigger 410
+GenInputManager Begin processing 412th record. Run 151435, Trigger 411
+GenInputManager Begin processing 413th record. Run 151435, Trigger 412
+GenInputManager Begin processing 414th record. Run 151435, Trigger 413
+GenInputManager Begin processing 415th record. Run 151435, Trigger 414
+GenInputManager Begin processing 416th record. Run 151435, Trigger 415
+GenInputManager Begin processing 417th record. Run 151435, Trigger 416
+GenInputManager Begin processing 418th record. Run 151435, Trigger 417
+GenInputManager Begin processing 419th record. Run 151435, Trigger 418
+GenInputManager Begin processing 420th record. Run 151435, Trigger 419
+GenInputManager Begin processing 421th record. Run 151435, Trigger 420
+GenInputManager Begin processing 422th record. Run 151435, Trigger 421
+GenInputManager Begin processing 423th record. Run 151435, Trigger 422
+GenInputManager Begin processing 424th record. Run 151435, Trigger 423
+GenInputManager Begin processing 425th record. Run 151435, Trigger 424
+GenInputManager Begin processing 426th record. Run 151435, Trigger 425
+GenInputManager Begin processing 427th record. Run 151435, Trigger 426
+GenInputManager Begin processing 428th record. Run 151435, Trigger 427
+GenInputManager Begin processing 429th record. Run 151435, Trigger 428
+%ERLOG-w CAFE word: ADC response out of range!  GlobalLibraryLogger 
+         AppFileBasedStream::writeEmptyRS() 31-Aug-2011 16:52:32 CDT 
+         run = 151435 event = 428
+GenInputManager Begin processing 430th record. Run 151435, Trigger 429
+GenInputManager Begin processing 431th record. Run 151435, Trigger 430
+GenInputManager Begin processing 432th record. Run 151435, Trigger 431
+GenInputManager Begin processing 433th record. Run 151435, Trigger 432
+GenInputManager Begin processing 434th record. Run 151435, Trigger 433
+GenInputManager Begin processing 435th record. Run 151435, Trigger 434
+GenInputManager Begin processing 436th record. Run 151435, Trigger 435
+GenInputManager Begin processing 437th record. Run 151435, Trigger 436
+GenInputManager Begin processing 438th record. Run 151435, Trigger 437
+GenInputManager Begin processing 439th record. Run 151435, Trigger 438
+GenInputManager Begin processing 440th record. Run 151435, Trigger 439
+GenInputManager Begin processing 441th record. Run 151435, Trigger 440
+GenInputManager Begin processing 442th record. Run 151435, Trigger 441
+GenInputManager Begin processing 443th record. Run 151435, Trigger 442
+GenInputManager Begin processing 444th record. Run 151435, Trigger 443
+GenInputManager Begin processing 445th record. Run 151435, Trigger 444
+GenInputManager Begin processing 446th record. Run 151435, Trigger 445
+GenInputManager Begin processing 447th record. Run 151435, Trigger 446
+GenInputManager Begin processing 448th record. Run 151435, Trigger 447
+GenInputManager Begin processing 449th record. Run 151435, Trigger 448
+GenInputManager Begin processing 450th record. Run 151435, Trigger 449
+GenInputManager Begin processing 451th record. Run 151435, Trigger 450
+GenInputManager Begin processing 452th record. Run 151435, Trigger 451
+GenInputManager Begin processing 453th record. Run 151435, Trigger 452
+GenInputManager Begin processing 454th record. Run 151435, Trigger 453
+GenInputManager Begin processing 455th record. Run 151435, Trigger 454
+GenInputManager Begin processing 456th record. Run 151435, Trigger 455
+GenInputManager Begin processing 457th record. Run 151435, Trigger 456
+GenInputManager Begin processing 458th record. Run 151435, Trigger 457
+GenInputManager Begin processing 459th record. Run 151435, Trigger 458
+GenInputManager Begin processing 460th record. Run 151435, Trigger 459
+GenInputManager Begin processing 461th record. Run 151435, Trigger 460
+GenInputManager Begin processing 462th record. Run 151435, Trigger 461
+GenInputManager Begin processing 463th record. Run 151435, Trigger 462
+GenInputManager Begin processing 464th record. Run 151435, Trigger 463
+GenInputManager Begin processing 465th record. Run 151435, Trigger 464
+GenInputManager Begin processing 466th record. Run 151435, Trigger 465
+GenInputManager Begin processing 467th record. Run 151435, Trigger 466
+GenInputManager Begin processing 468th record. Run 151435, Trigger 467
+GenInputManager Begin processing 469th record. Run 151435, Trigger 468
+GenInputManager Begin processing 470th record. Run 151435, Trigger 469
+GenInputManager Begin processing 471th record. Run 151435, Trigger 470
+GenInputManager Begin processing 472th record. Run 151435, Trigger 471
+GenInputManager Begin processing 473th record. Run 151435, Trigger 472
+GenInputManager Begin processing 474th record. Run 151435, Trigger 473
+GenInputManager Begin processing 475th record. Run 151435, Trigger 474
+GenInputManager Begin processing 476th record. Run 151435, Trigger 475
+GenInputManager Begin processing 477th record. Run 151435, Trigger 476
+GenInputManager Begin processing 478th record. Run 151435, Trigger 477
+GenInputManager Begin processing 479th record. Run 151435, Trigger 478
+GenInputManager Begin processing 480th record. Run 151435, Trigger 479
+GenInputManager Begin processing 481th record. Run 151435, Trigger 480
+GenInputManager Begin processing 482th record. Run 151435, Trigger 481
+GenInputManager Begin processing 483th record. Run 151435, Trigger 482
+GenInputManager Begin processing 484th record. Run 151435, Trigger 483
+GenInputManager Begin processing 485th record. Run 151435, Trigger 484
+GenInputManager Begin processing 486th record. Run 151435, Trigger 485
+GenInputManager Begin processing 487th record. Run 151435, Trigger 486
+GenInputManager Begin processing 488th record. Run 151435, Trigger 487
+GenInputManager Begin processing 489th record. Run 151435, Trigger 488
+GenInputManager Begin processing 490th record. Run 151435, Trigger 489
+GenInputManager Begin processing 491th record. Run 151435, Trigger 490
+GenInputManager Begin processing 492th record. Run 151435, Trigger 491
+GenInputManager Begin processing 493th record. Run 151435, Trigger 492
+GenInputManager Begin processing 494th record. Run 151435, Trigger 493
+GenInputManager Begin processing 495th record. Run 151435, Trigger 494
+GenInputManager Begin processing 496th record. Run 151435, Trigger 495
+GenInputManager Begin processing 497th record. Run 151435, Trigger 496
+GenInputManager Begin processing 498th record. Run 151435, Trigger 497
+GenInputManager Begin processing 499th record. Run 151435, Trigger 498
+GenInputManager Begin processing 500th record. Run 151435, Trigger 499
+GenInputManager Begin processing 501th record. Run 151435, Trigger 500
+GenInputManager Begin processing 502th record. Run 151435, Trigger 501
+GenInputManager Begin processing 503th record. Run 151435, Trigger 502
+GenInputManager Begin processing 504th record. Run 151435, Trigger 503
+GenInputManager Begin processing 505th record. Run 151435, Trigger 504
+GenInputManager Begin processing 506th record. Run 151435, Trigger 505
+GenInputManager Begin processing 507th record. Run 151435, Trigger 506
+GenInputManager Begin processing 508th record. Run 151435, Trigger 507
+GenInputManager Begin processing 509th record. Run 151435, Trigger 508
+GenInputManager Begin processing 510th record. Run 151435, Trigger 509
+GenInputManager Begin processing 511th record. Run 151435, Trigger 510
+GenInputManager Begin processing 512th record. Run 151435, Trigger 511
+GenInputManager Begin processing 513th record. Run 151435, Trigger 512
+GenInputManager Begin processing 514th record. Run 151435, Trigger 513
+GenInputManager Begin processing 515th record. Run 151435, Trigger 514
+GenInputManager Begin processing 516th record. Run 151435, Trigger 515
+GenInputManager Begin processing 517th record. Run 151435, Trigger 516
+GenInputManager Begin processing 518th record. Run 151435, Trigger 517
+GenInputManager Begin processing 519th record. Run 151435, Trigger 518
+GenInputManager Begin processing 520th record. Run 151435, Trigger 519
+GenInputManager Begin processing 521th record. Run 151435, Trigger 520
+GenInputManager Begin processing 522th record. Run 151435, Trigger 521
+GenInputManager Begin processing 523th record. Run 151435, Trigger 522
+GenInputManager Begin processing 524th record. Run 151435, Trigger 523
+GenInputManager Begin processing 525th record. Run 151435, Trigger 524
+GenInputManager Begin processing 526th record. Run 151435, Trigger 525
+GenInputManager Begin processing 527th record. Run 151435, Trigger 526
+GenInputManager Begin processing 528th record. Run 151435, Trigger 527
+GenInputManager Begin processing 529th record. Run 151435, Trigger 528
+GenInputManager Begin processing 530th record. Run 151435, Trigger 529
+GenInputManager Begin processing 531th record. Run 151435, Trigger 530
+GenInputManager Begin processing 532th record. Run 151435, Trigger 531
+GenInputManager Begin processing 533th record. Run 151435, Trigger 532
+GenInputManager Begin processing 534th record. Run 151435, Trigger 533
+GenInputManager Begin processing 535th record. Run 151435, Trigger 534
+GenInputManager Begin processing 536th record. Run 151435, Trigger 535
+GenInputManager Begin processing 537th record. Run 151435, Trigger 536
+%ERLOG-s Abnormal termination: caused by signal:  8 Framework abortJob() 
+         31-Aug-2011 16:57:58 CDT run = 151435 event = 536
+Calling abortJob for DummyInput...
+Calling abortJob for FileInput...
+Calling abortJob for OldDHInput...
+Calling abortJob for DHInput...
+Calling abortJob for GenInputManager...
+Calling abortJob for ErrorLoggerManager...
+Calling abortJob for PuffModule...
+Calling abortJob for CalibrationManager...
+Calling abortJob for GeometryManager...
+Calling abortJob for SignalManager...
+Calling abortJob for TofManager...
+Calling abortJob for HepRootManager...
+Calling abortJob for RandomGenManager...
+RandomGenManager: saving current random state  into CdfRnStat.dat
+BGENERATOR -   464272709,1704213668
+EvtGen -   871379316,59328414
+FAKE_EVENT -   1268899662,80728317
+GEANT -   1546855510,334947966
+GEN_PRIM_VERT -   764638172,1579709504
+GRNDM -   1673585898,179855866
+HEAVYQUARKGEN -   9876,54321
+HERWIG -   1633230920,1248590720
+PYTHIA -   2146588986,1993485369
+QFL -   197287249,942124193
+QQModule -   9223591,109736
+SIMULATION -   11680736,1415894442
+SVX_SIM -   1793376495,1618408825
+TAUOLA -   883591,9735476
+WGRAD -   1330525444,315427960
+mbr -   1732954992,1708468546
+Calling abortJob for Pythia...
+Calling abortJob for EvtGen...
+Calling abortJob for GenOutputManager...
+Calling abortJob for GenPrimVert...
+Calling abortJob for SimInitManager...
+Calling abortJob for SimulationControlMod...
+Calling abortJob for CotqModule...
+Calling abortJob for SvxqModule...
+Calling abortJob for DummyOutput...
+Calling abortJob for OldDHOutput...
+Calling abortJob for FileOutput...
+*****
+***** Closing output file: cdfSim_dgamma_1.root
+***** after 536 records, with a total size of 40046kBytes written.
+***** 535 of those records were phyics events, 
+***** whose average size is: 75.0kBytes/event
+*****

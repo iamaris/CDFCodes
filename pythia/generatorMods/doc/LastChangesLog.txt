@@ -1,0 +1,49 @@
+March 6 2002  stan
+
+Pythia updated to 6.203 in development and tagged in software
+release 4.4.0int3. Problems with this version and the dummy 
+version of upinit and upevnt in pythia_services, which cannot
+be seen, exist. Acedemic for now but will causes problems if
+an external generator is to be interfaced.
+
+Accessors and talk-tos provided to PYINT2 as requested by the
+Higgs group.
+
+12/20/2001  stan
+
+Additional changes to Pythia talk-tos
+The parameters below have been changed to a more convention
+notation
+New parameter names are:
+ msel
+ listFirst 
+ listLast
+ evListLevel
+ inListLevel
+ statListLevel
+ cmEnergy
+ seed 
+ target
+
+12/18/2001  lena
+
+Pythia talk-to's have changed.
+Tcl files require correction.
+
+mod talk Pythia
+  ...
+exit
+
+should be replaced by
+
+mod talk Pythia
+  PythiaMenu
+    ...
+  exit
+exit
+
+Corrected  tcl examples  are in  pythia_i/test/
+
+
+
+

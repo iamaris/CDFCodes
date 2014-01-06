@@ -1,0 +1,9 @@
+#!/bin/csh -f
+#
+# wbbgen_setup
+#  note cteq5m is for ndns = 101, the only choice as of Oct 04 2001
+
+#
+ln -sf $CDFSOFT2_DIR/wbbgen_i/pdfdat/cteq5m.tbl cteq5m
+
+#

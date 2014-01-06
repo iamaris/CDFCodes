@@ -1,0 +1,33 @@
+SAMPLE MSSM JOB FOR TEVATRON - ISAJET
+1960.,100,2,10/                / Ecm,(Nevents),Nprint,Njump
+SUPERSYM
+BEAMS
+'P','AP'/
+MSSMA
+200,-200,500,2/
+MSSMB
+200,200,200,200,200/
+MSSMC
+200,200,200,200,200,0,0,0/
+JETTYPE1
+'GLSS'/
+JETTYPE2
+'SQUARKS'/
+PT
+100,300,100,300/
+SEED 
+0.481317689811010E+14 /
+END
+STOP
+
+// First two lines are compulsory.
+// For choices, see Isajet 7.51 manual page 37 - found in 
+//  /cdf/code/cdfprod/isajet/v7_51/IRIX+6/doc (e.g., do dvips on isajet.dvi )
+// Note "Nevent" is inoperative, the tcl file controls no. of events.
+// Nprint (Np) and Njump (Nj) control the number of Isajet event prints thus:
+//   Nj = 0, no prints;
+//   Np = 0, 1-line prints every Nj-th event;
+//   Np > 0, Nj > 0, (a) Event 1 full print; (b) every Nj-th event printed,
+//      the first Np-1 of them full print and thereafter 1 line per event;
+//      where 1 line gives event no. and Isajet seed.
+//

@@ -1,0 +1,12 @@
+#!/cdf/user/products/perl/v5_005/Linux+2/bin/perl
+
+# this script returns true if first string is greater then the second
+
+$string1 = $ARGV[0];
+$string2 = $ARGV[1];
+
+if ( $string1 le $string2 ) {
+    
+ exec `nm --print-file-name --extern-only $string1 $string2 | ~lena/rels/fix/find_conflict` ; 
+} 
+

@@ -1,0 +1,75 @@
+MENU QQ
+
+COMMAND  BU_DECAYS
+switch ON/OFF decays of B+ and B0
+command syntax:
+                BU on|off
+END_COMMAND
+
+COMMAND  BS_DECAYS
+switch ON/OFF decays of Bs
+command syntax:
+                BS on|off
+END_COMMAND
+
+COMMAND  BC_DECAYS
+switch ON/OFF decays of Bc
+command syntax:
+                BC on|off
+END_COMMAND
+
+COMMAND  BB_DECAYS
+switch ON/OFF decays of Botomonia
+command syntax:
+                BB on|off
+END_COMMAND
+
+COMMAND  B_BARION_DECAYS
+switch ON/OFF decays of B barions
+command syntax:
+                BB on|off
+END_COMMAND
+
+COMMAND  PROMPT_CHARM_DECAYS
+switch ON/OFF decays prompt charm
+command syntax:
+                PROMPT_CHARM on|off
+END_COMMAND
+
+COMMAND  LOW
+switch ON/OFF decays of long-lived particles
+command syntax:
+                LOW on|off
+END_COMMAND
+
+COMMAND  NOL
+switch ON/OFF prompt decays of input particles
+command syntax:
+                NOL on|off
+END_COMMAND
+
+COMMAND  DEBUG
+GENP and HEPEVT numbers to dump
+command syntax:
+                DEBUG n1 n2
+END_COMMAND
+
+COMMAND  INPUT
+define input format(GENP HEPG or NONE)
+command syntax:
+                INPUT genp|hepg|none
+END_COMMAND
+
+COMMAND  OUTPUT
+define output format (GENP HEPG or NONE)
+command syntax:
+                INPUT genp|hepg|none
+END_COMMAND
+
+
+COMMAND  SHOW
+show values of all the parameters (not implemented yet)
+END_COMMAND
+
+END_MENU
+

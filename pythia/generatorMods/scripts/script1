@@ -1,0 +1,26 @@
+#!/usr/local/bin/tcsh -f
+
+set find_conflict = "~lena/rels/devel/generatorMods/scripts/find_conflict"
+echo $find_conflict
+set genlib="$CDFSOFT2_DIR/lib/$BFARCH/libgrappa.a"
+echo $genlib
+cd $CDFSOFT2_DIR/lib/$BFARCH/
+#set libs = `ls *.a`
+#foreach lib1 ($libs)
+#  echo $lib1
+#  nm --print-file-name --extern-only  $genlib $lib1 | $find_conflict 
+#end
+
+set lib1 = "/cdf/code/cdfsoft/products/isajet/v7_51a/Linux/isajet.g.a"
+echo $lib1
+nm --print-file-name --extern-only  $genlib $lib1 | $find_conflict 
+set lib1 = "/cdf/code/cdfsoft/products/herwig/v6_202/Linux+2.2/lib/libherwig.a"
+echo $lib1
+nm --print-file-name --extern-only  $genlib $lib1 | $find_conflict 
+set lib1 = "/cdf/code/cdfsoft/products/lund/v6_203/Linux+2.2/lib/liblund.a"
+echo $lib1
+nm --print-file-name --extern-only  $genlib $lib1 | $find_conflict 
+set lib1 = "/cdf/code/cdfsoft/products/lund/v6_203/Linux+2.2/lib/libphotos.a"
+echo $lib1
+nm --print-file-name --extern-only  $genlib $lib1 | $find_conflict 
+

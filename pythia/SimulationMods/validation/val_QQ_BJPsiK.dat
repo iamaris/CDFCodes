@@ -1,0 +1,11 @@
+DECAY  B+
+HELICITY   1.0    0    0
+CHANNEL  0 0.00096  PSI   K+		
+ENDDECAY
+; =====================================================================
+DECAY  PSI
+ANGULAR_HELICITY  -1   1.  0.  1.
+ANGULAR_HELICITY   0   1.  0. -1.
+ANGULAR_HELICITY   1   1.  0.  1.
+CHANNEL  40 0.0602 MU+   MU-
+ENDDECAY

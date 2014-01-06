@@ -1,0 +1,25 @@
+	10	2
+      MRSD0          4.75    mu0        1 
+Bottom$Library:NDE_MRSD0_M475_MU0.DAB
+      MRSD0          4.50    mu0        2 
+Bottom$Library:NDE_MRSD0_M450_MU0.DAB
+      MRSD0          5.00    mu0        3 
+Bottom$Library:NDE_MRSD0_M500_MU0.DAB
+      MRSD0          4.75   2*mu0       4 
+Bottom$Library:NDE_MRSD0_M475_TWICE_MU0.DAB
+      MRSD0          4.75   mu0/2       5 
+Bottom$Library:NDE_MRSD0_M475_HALF_MU0.DAB
+      MRSD0          4.75   mu0/4       6 
+Bottom$Library:NDE_MRSD0_M475_QUARTER_MU0.DAB
+      MRSD0          4.50   mu0/4       7 
+Bottom$Library:NDE_MRSD0_M450_QUARTER_MU0.DAB
+      MRSD0          5.00   2*mu0       8 
+Bottom$Library:NDE_MRSD0_M500_TWICE_MU0.DAB
+      MRSD-          4.75    mu0        9 
+Bottom$Library:NDE_MRSDM_M475_MU0.DAB
+      A User-supplied Pt-y spectrum    10 
+User_Supplied_1b_Pt_y_Spectrum
+      MRSD0          4.75    mu0        1 
+Bottom$Library:MNR_MRSD0_M475_MU0.DAB
+      A User-supplied spectrum          2 
+User_Supplied_2b_Spectra

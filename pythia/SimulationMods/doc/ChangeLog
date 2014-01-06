@@ -1,0 +1,208 @@
+2001-04-26  Marc Paterno  <paterno@fnal.gov>
+
+	* test/run_cdfIntegrate.tcl: By default, debug output is now off,
+	and we run 2 particles per event, and 3 events.
+
+	* IntegrationControl.cc Entered code in IntegrationControl to
+	detect when the final step for a track has been taken, and to
+	detect whether or not there are more particles to track in the
+	current event. It should now be handling mulitple tracks per event
+	correctly, and also should no longer have the trouble of being
+	confused about materials at the end of the track. Added more debug
+	output.
+
+2001-04-25  Marc Paterno  <paterno@fnal.gov>
+
+	* Running cdfIntegrate on ncdf50 is failing, due to a corruption
+	of the geometry hierarchy. It looks like a severe memory
+	error. Code checked in so that I can rebulid on fcdfsgi2, and use
+	Purify to find the source of the problem.
+
+	* IntegrationControl.cc There was a problem in IntegrationControl
+	when dealing with more than one particle per event -- all the
+	tracks would contribute to a single PathIntegral. Modified this to
+	build up a vector of PathIntegrals for an event. It may not be
+	needed to keep more than one, because GEANT3 tracks one particle
+	at a time.
+
+2001-04-24  Marc Paterno  <paterno@fnal.gov>
+
+	* Clean up debug output in IntegrationControl.cc; some of the
+	output that should have been under "DebugLevel >= 2" was in the
+	path of execution unconditionally.
+
+2001-04-23  Marc Paterno  <paterno@fnal.gov>
+
+	* Updated Python scripts to deal with move of materialName. The
+	sample script "analyze.py" now prints, for each "leg"
+		- the cylindrical radius to the end of the leg
+		- the cumulative radiation lengths to that point
+		- the name of the material in the leg
+	
+	* Completed updating classes, and tests, to reflect the move of
+	materialName from IntegrationData to IntegrationLeg. As long as we
+	always make sure one leg is always in a single volume, and as long
+	as one volume always contains only one material, this arrangement
+	is simpler and more efficient.
+
+2001-04-20  Marc Paterno  <paterno@fnal.gov>
+
+	* IntegrationData.hh: Removed materialName data member.
+	* IntegrationLeg.hh: Added materialName.
+
+2001-04-18  Marc Paterno  <paterno@fnal.gov>
+
+	* IntegrationData.hh: Added materialName data member. This is set
+ 	to "unk" (for "unknown") by default. When accumulating
+ 	(operator+=, operator-=), if the added IntegrationData object
+ 	doesn't have the same material name, the material name of *this is
+ 	changed to "mixed". See updateMaterialName.
+
+	This change has an unfortunate side-effect: subtraction is no
+ 	longer the opposite of addition. That is, if c = a + b, then c - a
+ 	does not have to equal b. This is because material information can
+ 	get lost.
+
+	Updated all tests to deal with this, and to deal with the previous
+ 	change in which the startPoint and endPoint were added to
+ 	IntegrationLeg.
+
+	Updated the python scripts to deal with the new material name.
+
+	IntegrationControl has not yet been updated to fill in meaningful
+ 	values for the material name, so currently everything comes out as
+ 	"unk".
+
+2001-04-16  Marc Paterno  <paterno@fnal.gov>
+
+	* Added (and then translated to Python 1.5.2, from Python 2.0)
+ 	some scripts to do analysis of the output from cdfIntegrate. These
+ 	scripts are now copied into the bin directory using the SCRIPTS
+ 	rule of SRT.
+
+2001-04-12  Marc Paterno  <paterno@fnal.gov>
+
+	* IntegrationLeg.cc: Removal of _pointCache allowed me to remove
+ 	the dependency on CdfDetector.
+
+	* IntegrationLeg.hh: Removed _pointCache, and added _start
+ 	and _end. Corresponding adjustments made in PathIntegral.
+
+	* Added some additional debug output to IntegrationControl;
+	clarified the meaning of the "DebugLevel" settings. See
+	IntegrationControl for details. Changed the format of the printout
+	of IntegrationLegs, to make it easier to differentiate between the
+	"current" and "cumulative" data.
+
+2001-04-09  Marc Paterno  <paterno@fnal.gov> (not yet tagged)
+
+	* IntegrationControl updated to read information from GEANT3
+	common blocks. This isn't yet tested to make sure the information
+	is correct (units need to be checked, need to make sure step size
+	is small enough so that the integration technique works...), but
+	it is a first functioning version.
+
+	Here's the relevant bit of implementation:
+	----
+	double currentStepLength = g3->Gctrak()->STEP;
+	double currentRadl = g3->Gcmate()->RADL;
+	double currentAbsl = g3->Gcmate()->ABSL;
+	int    fieldType = g3->Gctmed()->IFIELD;
+	double currentFieldStrength = g3->Gctmed()->FIELDM;
+	step.radiationLength = currentStepLength/currentRadl;
+	step.interactionLength = currentStepLength/currentAbsl;
+	if ( fieldType == 3 ) step.BdL = currentFieldStrength;
+	step.pathLength = currentStepLength;
+	----
+	
+2001-04-09  Marc Paterno  <paterno@fnal.gov> [v3_14_0int3a]	
+
+	* First (skeleton) version of cdfIntegrate added. This version
+	does not yet read from the GEANT3 common blocks, and the output
+	format is still pretty primitive. It writes tab-delimited columns
+	to standard output. This is intended for easy machine reading, not
+	for human readability.
+		
+
+2002-05-21 Jim Kowalkowski
+
+	All the notes regarding the changes to the simulation in 
+	order to declare alignment things to GEANT.
+	
+	Affected packages: SimulationBase, SimulationMods, geant_i
+
+	I am now able to specify the following in a tcl file:
+
+	talk CalibrationManager
+  	  Jobset set 167829
+	  PrintDBStats set t
+	exit
+
+	talk SimInitManager
+	  applyAlignment set t
+	exit
+
+	and according to my program have new volumes declared for the
+	parts that are "nudged". I have not produced a small validation
+	program to verify that the parts are moved corrected in GEANT
+	(making this change took WAY longer than I thought it would).
+	All I know right now is that cdfSim using run_cdfSim.tcl runs
+	without errors.
+
+	One more thing - it turns out that I found a bug in how
+	deltas are applied within tangibles as I was going through
+	the code.  The failure mode that I've located in regards to this
+	bug appears if the low level components are first "nudged" and
+	afterwards the higher level structures are moved.  If the higher
+	level structures are moved first, and them lower leveled moved,
+	then everything is OK.
+
+	The bug is that the tangibles do not keep track of the type of
+	delta that was applied (relative to local or global position).
+	Here are the specifics about the bug:
+	1) The "setDelta" methods assume that the current delta was applied
+	the same way as the previous.
+	2) recalculation of absolute position (caused by a higher level
+	structure being moved as apposed to "setDelta" being called)
+	assumes a delta relative to the global position.
+
+	1) Alignment before beginRun:
+	it turns out that it is easy to "announce" to the
+	CDFDetector that it is time to do alignment.  I did
+	as a suggested in last week's simulation meeting -
+	put the detector->update call into the beginJob of 
+	SimInitManager right before I declare it to geant.
+	This method requires setting of a jobset in the
+	CalibrationManager as mentioned at the meeting.
+	(this is the good news)
+
+	2) declaring aligned volumes to geant:
+	This terms out to be much more difficult than I 
+	suspected because of the "placeable subtrees". 
+	I switched the algorithm over to use the tangible
+	tree instead of the logical/physical volume tree
+	because	this is where the alignment info is kept.
+	This worked out OK, but it turns out that
+	 - Not all material is represented in the tangible
+	   tree; only things that are rooted at readout elements.
+	   I was able to get around this (not in an elegant fashion)
+	 - I found a bug in the CLHEP Transform class that showed up
+	   when I switched over to the new geant declaration routines
+	   (matrix inversion caused rounding errors which caused
+	   accessors to fail).  Mark Fischler fixed the problem.
+	 - producing the extra volumes in the context of placeable
+	   subtrees that have alignment applied caused copy number problems.
+	   A cdf physical volume can only have one copy number.  The
+	   simulation dispatch table needs an entry for each unique
+	   path to a digitizer.  the extra aligned volumes did not have
+	   dispatch table entries (because of hidden copy numbers)
+	   and the test program died when it entered the volume with
+	   no dispatch table entry.  I changed the copy number handling
+	   to record copy numbers in tangibles and produce dispatch
+	   table entries using the tangible copy numbers.
+
+
+
+
+	
+

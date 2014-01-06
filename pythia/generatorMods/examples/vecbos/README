@@ -1,0 +1,21 @@
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=
+Vecbos as a part of cdfGen: use the example files 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=
+w3j_cdfGen.tcl - generate 10k events
+unwt_cdfGen.tcl - unweight them
+herprt_cdfGen.tcl - hidronize them
+
+For example:
+source generatorMods/examples/vecbos/start
+cd results/
+../bin/$BFARCH/cdfGen ../generatorMods/examples/vecbos/w3j_cdfGen.tcl
+../bin/$BFARCH/cdfGen ../generatorMods/examples/vecbos/unwt_cdfGen.tcl
+../bin/$BFARCH/cdfGen ../generatorMods/examples/vecbos/herprt_cdfGen.tcl
+
+The  output file from the last execution (vecbos_herprt.ybs, this file 
+has nothing with an ybos file, I should change the extension) contains HEPG bank and 
+could be used for any detector simulation. 
+  
+
+Please report any problems to velev@fnal.gov

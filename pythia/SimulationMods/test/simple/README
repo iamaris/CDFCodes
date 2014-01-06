@@ -1,0 +1,5 @@
+This directory contains only "simple" tests, that is,
+ones that do not depend on other packages. This is here
+to enable faster testing of those components of the 
+SimulationMods package that do not depend on other
+packages.

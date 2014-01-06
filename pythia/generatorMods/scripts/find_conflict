@@ -1,0 +1,64 @@
+#!/cdf/user/products/perl/v5_005/Linux+2/bin/perl
+
+# this script is supposed to be used in the following context:
+# 'nm --print-file-name --extern-only libname1.a libname2.a  | 
+#         find_conflict >> conflicts.txt'
+
+@names = '';
+@sub = '';
+@lib1 = '';
+@lib2 = '';
+@chars2 = '';
+@chars1 = '';
+
+if ( $ARGV[0] ) {
+    print "usage: this script is supposed to be used in the following context: \n";
+    print "nm --print-file-name --extern-only libname1.a libname2.a  |";
+    print " find_conflict >> conflicts.txt \n";
+    print "It shows the same names. \n";
+    print "Only names from different libraries are compared. \n";
+    print "Names should be defined. \n";
+    print "Names are fortran names.\n ";
+    
+}
+
+else {    
+    while (<STDIN>) { 
+	@string = split ' ', $_; 
+	$loony = $string[2];
+	$conflict = 0;
+	if ( ($string[0] =~ /\w/) ) { 
+	    foreach $name ( @names ) {
+		@sub = split ' ', $name;
+		@lib1 = split ':', $sub[0];
+		@lib2 = split ':', $string[0];
+#		if ( $lib1[0] eq $lib2[0]) { print "the same library " ;}
+#		print "Name1 - $string[2] ; Name2 - $sub[2] \n";
+		@chars2 = reverse split // ,$string[2];
+		@chars1 = reverse split // ,$sub[2];
+		if ( ($string[2] eq $sub[2]) && 
+		     !( $lib1[0] eq $lib2[0]) &&
+		     !( $string[1] eq "U" )   &&
+		     !( $sub[1] eq "U"   )  &&
+		     ( $chars1[0] eq "_" ) &&
+		     ( $chars2[0] eq "_" ) )
+		     {
+		    print "CONFLICT: ";
+		    print "library: $string[0]   ";
+		    print "library: $sub[0]   ";
+		    print "names: $string[2]  and  $sub[2] ";
+		    print "types: $string[1]  and  $sub[1] \n";
+		    $conflict = 1;
+		}
+	    }	
+	    if ( ! $conflict &&
+		 ! ( $string[1] eq "U" ) &&
+		 ( $chars2[0] eq "_")
+		 ) {
+#		print "Adding string:  $_ \n";
+		@names = (@names, $_); 
+	    }
+	}    
+    }
+}
+

@@ -1,0 +1,14 @@
+Herwig_ttbar_EvtGen           #ttbar with EvtGen for heavy flavour decay
+Herwig_ttbar_QQ               #ttbar with QQ for heavy flavour decay
+Pythia_dijet_UE               #20 GeV dijets with underlying event
+Pythia_jet50_UE               #jet 50 with underlying event added
+Pythia_Zmumu_EWK              #Z -> mumu, use Willis' pt tuning and add UE Tune A
+Pythia_Zee_EWK                #Z -> ee, use Willis' pt tuning and add UE Tune A
+Pythia_Wmunu_EWK              #W -> munu, use Willis' pt tuning and add UE Tune A
+Pythia_Wenu_EWK               #W -> enu, use Willis' pt tuning and add UE Tune A
+Herwig_Wmunu                  #W -> munu with Pythia UE Tune A (mean 1, Poison)
+Herwig_Zmumu                  #Z -> mumu with no underlying event
+Herwig_Wenu                   #W -> enu with MBR UE (mean 1, Poison distributed)
+Bgenerator_BJPsiK_HepgFilter  #Bgenerator B+ -> J/Psi K+ (dimuon pT>1.5 & |eta|<1.1)
+Pythia_JPsi_mumu_HepgFilter   #Pythia prompt J/Psi (dimuon pT>1.5 & |eta|<1.1)
+Pythia_bb_generic             #Pythia generic bbar 

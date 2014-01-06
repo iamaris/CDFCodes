@@ -1,0 +1,11 @@
+#!/bin/csh -f
+#
+# start vecbos
+
+#exec setenv CDFVEGOUT myout.grid
+setenv VECBOS_INITDATA $CDFSOFT2_DIR/vecbos_i/initdata
+# Thu Jul 12 16:21:01 CDT 2001 G.Velev: Please add your grid file for 
+# generation. The file  below works only for W+3jets case 
+setenv CDFVEGIN $CDFSOFT2_DIR/vecbos_i/initdata/w3p_1.grid
+
+

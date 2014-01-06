@@ -1,0 +1,33 @@
+ISAJET: T.TBAR at 1800 GeV 
+1960.,5,1,1000/                 / Ecm,Nevent,Nprint,Njump
+TWOJET                       /Reaction
+NTRIES                       /Quit if no good event after ntries tries
+10000/
+BEAMS
+'P','AP'/
+PT                           /Pt limits for jets
+10,200,10,200/
+TMASS                        /t quark mass
+175./
+JETTYPE1                     /select types for jet 1
+'TP','TB'/
+JETTYPE2                     /select types for jet 2
+'TP','TB'/
+SEED                         /Random no. seed
+0.491317689811010E+14 /
+END
+STOP
+
+// Comments on above:
+// First two lines are compulsory.
+// For choices, see Isajet 7.51 manual page 37 - found in 
+//  /cdf/code/cdfprod/isajet/v7_51/IRIX+6/doc (e.g., do dvips on isajet.dvi )
+// Note "Nevent" is inoperative, the tcl file controls no. of events.
+// Nprint (Np) and Njump (Nj) control the number of Isajet event prints thus:
+//   Nj = 0, no prints;
+//   Np = 0, 1-line prints every Nj-th event;
+//   Np > 0, Nj > 0, (a) Event 1 full print; (b) every Nj-th event printed,
+//      the first Np-1 of them full print and thereafter 1 line per event;
+//      where 1 line gives event no. and Isajet seed.
+// Note: DO NOT use keyword PDFLIB until a "pdflib-version" of Isajet exists.
+//

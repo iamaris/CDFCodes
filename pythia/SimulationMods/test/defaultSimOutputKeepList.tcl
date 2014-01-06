@@ -1,0 +1,39 @@
+proc defaultSimOutputKeepList {streamName} {
+
+    output keepList  $streamName -add BMUD_StorableBank
+    output keepList  $streamName -add BSUD_StorableBank
+    output keepList  $streamName -add CEMD_StorableBank
+    output keepList  $streamName -add CESD_StorableBank
+    output keepList  $streamName -add CHAD_StorableBank
+    output keepList  $streamName -add CMPD_StorableBank
+    output keepList  $streamName -add CMUD_StorableBank
+    output keepList  $streamName -add CMXD_StorableBank
+    #output keepList  $streamName -add COTD_StorableBank
+    output keepList  $streamName -add PadSqz::COTQ
+    #output keepList  $streamName -add SIXD_StorableBank
+    #output keepList  $streamName -add ISLD_StorableBank
+    output keepList  $streamName -add PadSqz::SVXQ
+    output keepList  $streamName -add CP2D_StorableBank
+    output keepList  $streamName -add CPRD_StorableBank
+    output keepList  $streamName -add CSPD_StorableBank
+    output keepList  $streamName -add CSXD_StorableBank
+    output keepList  $streamName -add DBUsedSetInfoList
+    output keepList  $streamName -add ErrorSummary
+    output keepList  $streamName -add EVCL_StorableBank
+    output keepList  $streamName -add HEPG_StorableBank
+    output keepList  $streamName -add HEP4_StorableBank
+    output keepList  $streamName -add LRIH_StorableBank
+    output keepList  $streamName -add OBSP_StorableBank
+    output keepList  $streamName -add OBSV_StorableBank
+    output keepList  $streamName -add PEMD_StorableBank
+    output keepList  $streamName -add PESD_StorableBank
+    output keepList  $streamName -add PHAD_StorableBank
+    output keepList  $streamName -add PPRD_StorableBank
+    output keepList  $streamName -add ReleaseHistory
+    output keepList  $streamName -add TOFD_StorableBank
+    output keepList  $streamName -add TSUD_StorableBank
+    output keepList  $streamName -add WHAD_StorableBank
+    output keepList  $streamName -add MVTX_StorableBank
+    output keepList  $streamName -add PropagatedSiParticleColl   
+    output keepList  $streamName -add HitOBSPNumberColl       
+}    

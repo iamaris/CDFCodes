@@ -1,0 +1,148 @@
+//  28 Aug. 2001, Elena Gerchtein.
+// These take effect AFTER release 4.0.0 
+
+//  ALL EXEC BUILD's AND TCL FILES THAT USE GENERATORS 
+//  SHOULD BE MODIFIED WITH RESPECT TO THE FOLLOWING CHANGES IN 
+//  generatorMods
+
+//-->-->  GENERATOR SEQUENCE  <--<--\\
+
+All generators and related modules are put into sequences:   
+   HardScatGenSequence
+   DecayPackageSequence
+   MinBiasSequence
+   GenFilterSequence	
+
+Two modules are responsible for writing header banks to the event
+and writing HEPG bank:
+
+   GenInputManager
+   GenOutputManager	
+
+Test executable build generatorMods/test/cdfGen.cc
+is an example of the right order of generator modules and sequences.
+Order is important.
+
+//-->-->   DEFAULT SETUP <--<--\\
+
+The default setup for cdfGen executable:
+
+Input Modules
+*   DummyInput            dummy input module
+*   FileInput             File Input Module
+*   DHInput               Data Handling Input Module
+*!  GenInputManager       Generator Input Manager
+
+Output Modules
+*   DummyOutput           dummy output module
+*   FileOutput            Standard File Output Module
+*!  DHOutput              Data Handling General Output Module
+
+    Default (all modules) path                AllPath
+    Filter?  Mask  nQuery  nPassed
+*   CDF required manager sequence               ManagerSequence
+*     no      on        0        0                ErrorLoggerManager
+*     no      on        0        0                PuffModule
+*     no      on        0        0                CalibrationManager
+*     no      on        0        0                GeometryManager
+*     no      on        0        0                SignalManager
+*    Hard Scat. generator sequence              HardScatGenSequence
+      no      on        0        0                Pythia
+      no      on        0        0                Isajet
+      no      on        0        0                herwig
+      no      on        0        0                FAKE_EVENT
+*    Decay Package Sequence                     DecayPackageSequence
+      no      on        0        0                TauolaModule
+      no      on        0        0                QQModule
+      no      on        0        0                EvtGen
+*     no      on        0        0              GenOutputManager
+*   Min Bias sequence                           MinBiasSequence()
+      no      on        0        0                mbr
+*    Generator Filter sequence                  GenFilterSequence()
+      yes     on        0        0                GenTrigBFilter
+      yes     on        0        0                GenTrigModule
+      yes     on        0        0              HepRootManager
+
+//-->-->   MODULE DESCRIPTION  <--<--\\
+
+1) Input module - GenInputManager - writes header bank;
+   this module should be enabled if generators are used.
+
+2) HardScatGenerator inherits AbsGenModule ( generatorMods/AbsGenModule.hh );
+   AbsGenModule provides HEPEVT management and random stream management.
+   No generator is enabled by default.
+
+    multiple interactions are not possible since tauola
+    and EvtGen are separate modules. I need to do some CdfHepEvt
+    modifications to keep list of HEPEVT states and process it
+    correctly with all other modules. The "talk-tos" are kept 
+    in GeneratorModule anyway.
+
+3) DecayPackages - modify HEPEVT;
+   I used QQModule from generatorMods but I'm not sure if it has
+   the same options as qq menu in FrameMods/GeneratorModule
+
+
+4) GenOutputManager - writes HEPG banks from HEPEVT;
+   It also checks that only one HardScatGenerator is enabled
+   and it is possible to check other forbidden combinations
+   of enabled modules ( WGRAD + Pythia are excluded with the first
+   check and that was the only dangerous pair so far )
+   If check does not pass framework stop is requested.
+
+5) MinBiasGenerator - writes HEPG banks from HEPEVT;
+   No generators are enabled by default.
+
+6) GenFilters - filter HEPG banks.
+
+//-->-->  EXAMPLE OF TCL FILE <--<--\\
+
+# !!!!!!! -> input module 
+
+module input GenInputManager
+
+# !!!!!!! -> generator should be enabled before use
+# !!!!!!! -> no generator are enabled by default
+ 
+module enable FAKE_EVENT
+talk FAKE_EVENT
+  use PT
+  use THETA
+  use PHI
+  generate PT  10. 0. 10. 10. 0. 1.
+  generate PHI  180. 0. 360. 270. 0. 2
+  generate THETA 90. 10. 45. 135. 1.
+# Generate mu-
+  generate CDFCODE 207
+  generate NPARTICLES 1
+#  show
+exit
+
+talk DHOutput
+  output create main_stream runFE.root
+  output path main_stream AllPath
+  output keepList main_stream \
+                    LRIH_StorableBank EVCL_StorableBank HEPG_StorableBank 
+exit
+
+begin -nev 5
+
+//-->-->  CURRENT   STATUS  <--<--\\
+
+1) cdfGen produces the same HEPG output as cdfSim in 3.18.0int7
+   for any combination of hard scatter generator, decay package,
+   generator filter and min bias generator.
+
+2) generation of multiple interactions does not work yet
+   ( the same is right for 3.18.0int7 ).
+
+3) EvtGen currently works as decay package only until "generator"
+   version is provided.  
+
+
+
+
+
+
+
+
